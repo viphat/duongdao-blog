@@ -466,6 +466,7 @@ nav a {
 	background-color: var(--main-background-color);
 	border-radius: var(--border-radius);
 	color: var(--link-color);
+	align-self: flex-start;
 }
 
 .return-link {
