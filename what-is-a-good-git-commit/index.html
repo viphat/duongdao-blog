@@ -1279,7 +1279,7 @@
   </div>
   <hr>
   <div class="post-body">
-    <p><img src="/images/a6ac51f7dc544c5eb371c459c90c4eda/A_professional_and_clean_featured_image_for_a_blog_post.png" alt="A_professional_and_clean_featured_image_for_a_blog_post.png"></p>
+    <p><img src="/images/a6ac51f7dc544c5eb371c459c90c4eda/A_professional_and_clean_featured_image_for_a_blog_post_1.png" alt="A_professional_and_clean_featured_image_for_a_blog_post.png"></p>
 <p>In software development, version control systems like Git are essential for managing changes to the codebase. At ShareWis, we have a good Git workflow. It has many steps, but with some automation tools, it is still comfortable to use. After setting up a good Git workflow, we need to define what makes a good commit and a good pull request.</p>
 <p>For pull requests, it’s best if they don’t include too many changes. Avoid having too many files with hundreds of lines of changes. Ideally, a pull request should have only one commit. We will discuss more details about good pull requests in a future post. So, what is left to work effectively when collaborating as a team is to have a good commit. In this article, we will talk about the characteristics of a good commit. </p>
 <p>But why is a good commit important?</p>
@@ -1287,22 +1287,22 @@
 <li>For engineering team, good commit practices lead to better collaboration, easier debugging, and more maintainable code. Additionally, well-crafted commits can greatly enhance the understanding of the project’s history and facilitate smoother code reviews.</li>
 </ul>
 <h2 id="Characteristics-of-a-good-commit"><a href="#Characteristics-of-a-good-commit" class="headerlink" title="Characteristics of a good commit"></a>Characteristics of a good commit</h2><ul>
-<li><p><strong>Atomic Changes</strong></p>
-<ul>
+<li><strong>Atomic Changes</strong><ul>
 <li>A good commit should be atomic, meaning it should represent a single logical change. This makes it easier to understand and revert if necessary.</li>
 <li>Atomic changes contain only one feature, refactor, fix, etc.</li>
 </ul>
 </li>
-<li><p><strong>Clear and Descriptive Messages</strong></p>
-<ul>
-<li><p>The commit message should clearly describe what the commit does. This helps team members understand the changes without having to read the code.</p>
-</li>
-<li><p>For ShareWis projects, the <strong>commit message</strong>—specifically, the first line (treated as the commit title)—should contain the JIRA ticket ID, such as SWWB-XXX or FDT-YYY. This practice aids in easy tracking and cherry-picking of commits.</p>
-  <figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"># Good commits with Title:</span><br><span class="line"></span><br><span class="line">Commit 1: SWWB-6685 - Refactor PaymentService: Course Subscription by Stripe Part</span><br><span class="line">Commit 2: SWWB-6685 - Add new StripeService::CourseSubscriptionPurchase</span><br><span class="line">This new service handles the Course Subscription Purchase using PaymentIntent, allowing for transaction &quot;rollback&quot; if a failure occurs.</span><br><span class="line">Commit 3: SWWB-6685 - Add RSpec Tests to StripeService::CourseSubscriptionPurchase</span><br><span class="line">...</span><br></pre></td></tr></table></figure></li>
+<li><strong>Clear and Descriptive Messages</strong><ul>
+<li>The commit message should clearly describe what the commit does. This helps team members understand the changes without having to read the code.</li>
+<li>For ShareWis projects, the <strong>commit message</strong>—specifically, the first line (treated as the commit title)—should contain the JIRA ticket ID, such as SWWB-XXX or FDT-YYY. This practice aids in easy tracking and cherry-picking of commits.</li>
 </ul>
 </li>
-<li><p><strong>Properly Scoped Changes</strong></p>
+</ul>
+<blockquote>
+<h1 id="Good-commits-with-Title"><a href="#Good-commits-with-Title" class="headerlink" title="Good commits with Title:"></a>Good commits with Title:</h1><p>Commit 1: SWWB-6685 - Refactor PaymentService: Course Subscription by Stripe Part<br>Commit 2: SWWB-6685 - Add new StripeService::CourseSubscriptionPurchase<br>This new service handles the Course Subscription Purchase using PaymentIntent, allowing for transaction “rollback” if a failure occurs.<br>Commit 3: SWWB-6685 - Add RSpec Tests to StripeService::CourseSubscriptionPurchase</p>
+</blockquote>
 <ul>
+<li><strong>Properly Scoped Changes</strong><ul>
 <li>Changes in a commit should be properly scoped and not too large. Avoid mixing unrelated changes in a single commit.</li>
 </ul>
 </li>
@@ -1313,7 +1313,14 @@
 <li>A well-structured commit message typically includes a short summary (50 characters or less), followed by a more detailed description if necessary.</li>
 </ul>
 <p>  Example:</p>
-  <figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">SWWB-XXX - Add user authentication to the application</span><br><span class="line"></span><br><span class="line">- Implemented login functionality</span><br><span class="line">- Added user registration</span><br><span class="line">- Integrated with the existing user model</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>SWWB-XXX - Add user authentication to the application  </p>
+<ul>
+<li>Implemented login functionality  </li>
+<li>Added user registration  </li>
+<li>Integrated with the existing user model</li>
+</ul>
+</blockquote>
 </li>
 <li><p><strong>Examples of Good and Bad Commit Messages</strong></p>
 <ul>
