@@ -469,6 +469,14 @@ nav a {
 	align-self: flex-start;
 }
 
+table {
+	align-self: flex-start;
+}
+
+table td {
+	border: 1px solid var(--main-text-color);
+}
+
 .return-link {
 	color: var(--link-color);
 	margin-inline-start: 5px;
