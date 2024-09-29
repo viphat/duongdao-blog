@@ -224,6 +224,20 @@ li {
 	letter-spacing: -.01em;
 }
 
+table {
+	align-self: flex-start;
+}
+
+table td {
+	border: 1px solid var(--main-text-color);
+	padding: 1px;
+}
+
+ul, ol {
+  margin-top: 20px;
+	margin-bottom: 10px;
+}
+
 blockquote {
 	font-style: italic;
 	padding-inline-start: var(--spacing-sm);
@@ -467,15 +481,6 @@ nav a {
 	border-radius: var(--border-radius);
 	color: var(--link-color);
 	align-self: flex-start;
-}
-
-table {
-	align-self: flex-start;
-}
-
-table td {
-	border: 1px solid var(--main-text-color);
-	padding: 1px;
 }
 
 .return-link {
