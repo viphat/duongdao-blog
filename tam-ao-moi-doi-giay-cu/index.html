@@ -55,7 +55,7 @@
 
     <link rel="shortcut icon" href="/images/favicon.png">
   <meta name="generator" content="Hexo 7.3.0"></head>
-  <body class="min-h-screen bg-paper text-ink antialiased" data-analytics-api="/api/analytics" data-analytics-path="/tam-ao-moi-doi-giay-cu/" data-analytics-title="Tấm áo mới, đôi giày cũ" data-analytics-page-type="post">
+  <body class="min-h-screen bg-paper text-ink antialiased" data-analytics-api="/api/analytics" data-analytics-path="/tam-ao-moi-doi-giay-cu/" data-analytics-title="Tấm áo mới, đôi giày cũ" data-analytics-page-type="post" data-comments-api="/api/comments">
     <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-lg focus:bg-ink focus:px-4 focus:py-3 focus:text-sm focus:font-semibold focus:text-white">
       Chuyển đến nội dung
     </a>
@@ -155,6 +155,36 @@
 <p>Photo by <a target="_blank" rel="noopener" href="https://unsplash.com/@kevwuhoo?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit">Kevin</a> &#x2F; <a target="_blank" rel="noopener" href="https://unsplash.com/?utm_source=ghost&utm_medium=referral&utm_campaign=api-credit">Unsplash</a></p>
 
   </div>
+
+  <section class="comments-shell mt-14 border-t border-line pt-8" data-comments-section>
+    <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+      <div>
+        <h2 class="text-2xl font800 leading-8 text-ink">Bình luận</h2>
+        <p class="mt-2 text-sm leading-6 text-muted" data-comments-status>Đang tải bình luận...</p>
+      </div>
+      <button type="button" class="comments-author-button" data-comments-author-toggle>Chế độ tác giả</button>
+    </div>
+
+    <div class="comments-list mt-6" data-comments-list></div>
+
+    <form class="comments-form mt-8" data-comments-form>
+      <div class="comments-honeypot" aria-hidden="true">
+        <label for="comment-website">Website</label>
+        <input id="comment-website" name="website" type="text" tabindex="-1" autocomplete="off" />
+      </div>
+
+      <label class="comments-label" for="comment-name">Tên của bạn</label>
+      <input id="comment-name" class="comments-input" name="name" type="text" maxlength="80" autocomplete="name" required />
+
+      <label class="comments-label mt-4" for="comment-body">Bình luận</label>
+      <textarea id="comment-body" class="comments-textarea" name="body" maxlength="2000" rows="5" required></textarea>
+
+      <div class="mt-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+        <p class="text-sm leading-6 text-muted">Bình luận sẽ hiển thị sau khi tác giả duyệt.</p>
+        <button type="submit" class="comments-submit">Gửi bình luận</button>
+      </div>
+    </form>
+  </section>
 
   
     <aside class="mt-14 border-t border-line pt-8">
@@ -271,6 +301,9 @@
 
     
 <script src="/js/analytics.js"></script>
+
+    
+<script src="/js/comments.js"></script>
 
   </body>
 </html>

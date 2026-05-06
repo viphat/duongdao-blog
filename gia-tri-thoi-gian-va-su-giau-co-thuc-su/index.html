@@ -55,7 +55,7 @@
 
     <link rel="shortcut icon" href="/images/favicon.png">
   <meta name="generator" content="Hexo 7.3.0"></head>
-  <body class="min-h-screen bg-paper text-ink antialiased" data-analytics-api="/api/analytics" data-analytics-path="/gia-tri-thoi-gian-va-su-giau-co-thuc-su/" data-analytics-title="Giá Trị Thời Gian và Sự Giàu Có Thực Sự" data-analytics-page-type="post">
+  <body class="min-h-screen bg-paper text-ink antialiased" data-analytics-api="/api/analytics" data-analytics-path="/gia-tri-thoi-gian-va-su-giau-co-thuc-su/" data-analytics-title="Giá Trị Thời Gian và Sự Giàu Có Thực Sự" data-analytics-page-type="post" data-comments-api="/api/comments">
     <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-lg focus:bg-ink focus:px-4 focus:py-3 focus:text-sm focus:font-semibold focus:text-white">
       Chuyển đến nội dung
     </a>
@@ -139,6 +139,36 @@
 <p>Trường mà đa số người dân tại Nhật cho con đi học hiện tại là dạng công lập hoặc tư thục nhưng không thuộc hệ thống tư lập kia, nên bạn sẽ không dễ dàng nhận ra sự khác biệt. Còn việc người giàu có khoe khoang hay không thì tùy thuộc vào mỗi gia đình. Có những gia đình, con cái họ không mang đồ đạc gì đặc biệt do trường quy định đồng phục nghiêm ngặt, nhưng khi đến đón con, họ lái xe sang trọng. Hoặc khi có cơ hội gặp họ ở bên ngoài, bạn sẽ nhận thấy họ rất chú trọng vào thương hiệu quần áo. Hơn nữa, họ đầu tư rất nhiều cho việc học hành của con cái. Những gia đình không có điều kiện chỉ có thể cho con học các kiến thức cơ bản, nhưng gia đình có điều kiện thì không chỉ đầu tư vào nhiều chương trình học mà còn dành nhiều thời gian để đồng hành cùng con. Việc học không chỉ dừng lại khi rời khỏi trường, mà còn tiếp tục ở nhà, nơi cha mẹ hỗ trợ con trong việc luyện tập sau giờ học. Chính vì thế, trong nhiều gia đình giàu có, chồng sẽ đi làm để vợ tập trung chăm sóc và giáo dục con cái.</p>
 
   </div>
+
+  <section class="comments-shell mt-14 border-t border-line pt-8" data-comments-section>
+    <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+      <div>
+        <h2 class="text-2xl font800 leading-8 text-ink">Bình luận</h2>
+        <p class="mt-2 text-sm leading-6 text-muted" data-comments-status>Đang tải bình luận...</p>
+      </div>
+      <button type="button" class="comments-author-button" data-comments-author-toggle>Chế độ tác giả</button>
+    </div>
+
+    <div class="comments-list mt-6" data-comments-list></div>
+
+    <form class="comments-form mt-8" data-comments-form>
+      <div class="comments-honeypot" aria-hidden="true">
+        <label for="comment-website">Website</label>
+        <input id="comment-website" name="website" type="text" tabindex="-1" autocomplete="off" />
+      </div>
+
+      <label class="comments-label" for="comment-name">Tên của bạn</label>
+      <input id="comment-name" class="comments-input" name="name" type="text" maxlength="80" autocomplete="name" required />
+
+      <label class="comments-label mt-4" for="comment-body">Bình luận</label>
+      <textarea id="comment-body" class="comments-textarea" name="body" maxlength="2000" rows="5" required></textarea>
+
+      <div class="mt-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+        <p class="text-sm leading-6 text-muted">Bình luận sẽ hiển thị sau khi tác giả duyệt.</p>
+        <button type="submit" class="comments-submit">Gửi bình luận</button>
+      </div>
+    </form>
+  </section>
 
   
     <aside class="mt-14 border-t border-line pt-8">
@@ -255,6 +285,9 @@
 
     
 <script src="/js/analytics.js"></script>
+
+    
+<script src="/js/comments.js"></script>
 
   </body>
 </html>
