@@ -38,6 +38,27 @@
     status.classList.toggle("comments-status-error", Boolean(isError));
   }
 
+  function setAuthorSignInStatus() {
+    if (!status) return;
+
+    status.textContent = "";
+    status.classList.add("comments-status-error");
+    status.appendChild(document.createTextNode("Cần đăng nhập Cloudflare Access để duyệt và trả lời."));
+
+    var link = document.createElement("a");
+    link.className = "comments-status-link";
+    link.href = authorSignInUrl();
+    link.target = "_blank";
+    link.rel = "noopener";
+    link.textContent = "Đăng nhập";
+    status.appendChild(document.createTextNode(" "));
+    status.appendChild(link);
+  }
+
+  function authorSignInUrl() {
+    return new URL(endpoint("/author?path=") + encodeURIComponent(path), window.location.origin).href;
+  }
+
   function requestJson(url, options) {
     return fetch(url, options || {}).then(function (response) {
       return response.text().then(function (text) {
@@ -93,7 +114,7 @@
         authorMode = false;
         section.classList.remove("comments-author-mode");
         if (authorToggle) authorToggle.textContent = "Chế độ tác giả";
-        setStatus("Cần đăng nhập Cloudflare Access để duyệt và trả lời.", true);
+        setAuthorSignInStatus();
       })
       .finally(function () {
         pendingAuthorLoad = false;
