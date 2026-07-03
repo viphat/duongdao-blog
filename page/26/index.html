@@ -24,21 +24,26 @@
         theme: {
           extend: {
             colors: {
-              paper: "#ffffff",
-              mist: "#f7f7f7",
-              ink: "#171717",
-              muted: "#666666",
-              line: "#e5e5e5",
-              leaf: "#16835f",
-              berry: "#b33d5a",
+              paper: "#f5f8f1",
+              card: "#ffffff",
+              ink: "#2b3a2a",
+              muted: "#64735f",
+              line: "#dde7d4",
+              leaf: "#35714a",
+              pine: "#29583b",
+              moss: "#e9f1e0",
+              cream: "#f8f4e7",
+              berry: "#b04a4a",
               amber: "#b7791f"
             },
             fontFamily: {
               sans: ["Be Vietnam Pro", "Inter", "ui-sans-serif", "system-ui", "sans-serif"],
+              display: ["Lora", "Georgia", "serif"],
               mono: ["JetBrains Mono", "ui-monospace", "SFMono-Regular", "monospace"]
             },
             boxShadow: {
-              lift: "0 16px 48px rgba(23, 23, 23, 0.08)"
+              lift: "0 16px 44px rgba(53, 113, 74, 0.10)",
+              leafy: "0 8px 26px rgba(53, 113, 74, 0.12)"
             }
           }
         }
@@ -47,6 +52,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&subset=vietnamese&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,500;1,600&subset=vietnamese&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
     
 <link rel="stylesheet" href="/css/style.css">
@@ -54,16 +60,52 @@
     <link rel="shortcut icon" href="/images/favicon.png">
   <meta name="generator" content="Hexo 7.3.0"></head>
   <body class="min-h-screen bg-paper text-ink antialiased" data-analytics-api="/api/analytics" data-analytics-path="/page/26/" data-analytics-title="Blog Dương &amp; Đào Family" data-analytics-page-type="page" data-comments-api="/api/comments">
-    <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-lg focus:bg-ink focus:px-4 focus:py-3 focus:text-sm focus:font-semibold focus:text-white">
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-full focus:bg-leaf focus:px-4 focus:py-3 focus:text-sm focus:font-semibold focus:text-white">
       Chuyển đến nội dung
     </a>
 
-    <header class="sticky top-0 z-40 border-b border-line bg-white/95 backdrop-blur">
-      <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-4 md:px-8">
+    <header class="sticky top-0 z-40 border-b border-line bg-paper/90 backdrop-blur">
+      <div class="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden="true">
+        <svg viewBox="0 0 200 140" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute -right-4 -top-6 h-20 w-32 rotate-180 opacity-45" aria-hidden="true" focusable="false">
+  <path d="M10 130 C 54 108, 104 72, 182 16" stroke="#7c9b72" stroke-width="2.4" stroke-linecap="round" />
+  <g transform="translate(34 119) rotate(8)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#a9c398" opacity="0.9" /></g>
+  <g transform="translate(52 109) rotate(-84)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#bcd3a8" opacity="0.9" /></g>
+  <g transform="translate(76 94) rotate(4)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#8fb083" opacity="0.9" /></g>
+  <g transform="translate(96 81) rotate(-88)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#a9c398" opacity="0.9" /></g>
+  <g transform="translate(120 64) rotate(0)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#bcd3a8" opacity="0.9" /></g>
+  <g transform="translate(138 52) rotate(-92)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#8fb083" opacity="0.9" /></g>
+  <g transform="translate(158 37) rotate(-6)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#a9c398" opacity="0.9" /></g>
+  <g transform="translate(172 26) rotate(-96)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#cfe0bd" opacity="0.9" /></g>
+  <g transform="translate(182 16) rotate(-42)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#7fa574" opacity="0.95" /></g>
+  <circle cx="64" cy="100" r="3" fill="#6f9270" opacity="0.55" />
+  <circle cx="112" cy="71" r="2.5" fill="#6f9270" opacity="0.5" />
+  <circle cx="150" cy="43" r="2.8" fill="#6f9270" opacity="0.55" />
+</svg>
+
+        <svg viewBox="0 0 200 140" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute left-[38%] -top-8 hidden h-16 w-28 rotate-180 opacity-30 lg:block" aria-hidden="true" focusable="false">
+  <path d="M10 130 C 54 108, 104 72, 182 16" stroke="#7c9b72" stroke-width="2.4" stroke-linecap="round" />
+  <g transform="translate(34 119) rotate(8)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#a9c398" opacity="0.9" /></g>
+  <g transform="translate(52 109) rotate(-84)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#bcd3a8" opacity="0.9" /></g>
+  <g transform="translate(76 94) rotate(4)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#8fb083" opacity="0.9" /></g>
+  <g transform="translate(96 81) rotate(-88)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#a9c398" opacity="0.9" /></g>
+  <g transform="translate(120 64) rotate(0)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#bcd3a8" opacity="0.9" /></g>
+  <g transform="translate(138 52) rotate(-92)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#8fb083" opacity="0.9" /></g>
+  <g transform="translate(158 37) rotate(-6)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#a9c398" opacity="0.9" /></g>
+  <g transform="translate(172 26) rotate(-96)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#cfe0bd" opacity="0.9" /></g>
+  <g transform="translate(182 16) rotate(-42)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#7fa574" opacity="0.95" /></g>
+  <circle cx="64" cy="100" r="3" fill="#6f9270" opacity="0.55" />
+  <circle cx="112" cy="71" r="2.5" fill="#6f9270" opacity="0.5" />
+  <circle cx="150" cy="43" r="2.8" fill="#6f9270" opacity="0.55" />
+</svg>
+
+      </div>
+      <div class="relative mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-3.5 md:px-8">
         <a href="/" class="group inline-flex items-center gap-3 text-ink no-underline">
-          <img src="/images/kiwi-flaticon.png" alt="Blog Dương Đào Family" class="h-11 w-11 rounded-lg object-contain" />
+          <span class="inline-flex h-11 w-11 items-center justify-center rounded-full bg-moss ring-1 ring-line">
+            <img src="/images/kiwi-flaticon.png" alt="Blog Dương Đào Family" class="h-8 w-8 object-contain" />
+          </span>
           <span class="flex flex-col">
-            <span class="text-sm font800 leading-5 md:text-base">Dương & Đào Family</span>
+            <span class="font-display text-base font-semibold leading-5 md:text-lg">Dương &amp; Đào Family</span>
             <span class="hidden text-xs text-muted md:block">Nhật ký gia đình, học hỏi và những chuyến đi</span>
           </span>
         </a>
@@ -74,12 +116,12 @@
           <a class="nav-link" href="/archives">Lưu trữ</a>
         </nav>
 
-        <button type="button" class="inline-flex h-11 items-center justify-center rounded-lg border border-line px-4 text-sm font-semibold text-ink md:hidden" data-menu-toggle aria-expanded="false" aria-controls="mobile-menu">
+        <button type="button" class="inline-flex h-11 items-center justify-center rounded-full border border-line bg-card px-4 text-sm font-semibold text-ink md:hidden" data-menu-toggle aria-expanded="false" aria-controls="mobile-menu">
           Menu
         </button>
       </div>
 
-      <div id="mobile-menu" class="hidden border-t border-line bg-white md:hidden">
+      <div id="mobile-menu" class="hidden border-t border-line bg-paper md:hidden">
         <nav class="mx-auto flex max-w-6xl flex-col px-5 py-4" aria-label="Điều hướng di động">
           <a class="mobile-link" href="/">Trang chủ</a>
           <a class="mobile-link" href="/categories">Chuyên mục</a>
@@ -92,112 +134,640 @@
       
 
 <section class="grid gap-12">
-  <div class="grid gap-8 border-b border-line pb-10 lg:grid-cols-[minmax(0,1fr)_320px] lg:items-end">
-    <div class="max-w-3xl">
-      <p class="text-sm font-semibold uppercase text-leaf">Hôm nay tôi học được gì?</p>
-      <h1 class="mt-4 max-w-3xl text-4xl font800 leading-tight text-ink md:text-6xl">
-        Những ghi chép chậm rãi của Dương & Đào.
-      </h1>
-      <p class="mt-6 max-w-2xl text-lg leading-8 text-muted">
-        Học, sống, đi, nghĩ, làm, yêu. Viết lại để nhớ, để hiểu mình hơn, và để có thứ quay về đọc cùng nhau.
-      </p>
-      <div class="mt-8 flex flex-wrap gap-3">
-        <a href="/categories" class="inline-flex min-h-11 items-center rounded-lg bg-ink px-5 text-sm font-semibold text-white no-underline transition hover:bg-leaf">
-          Đọc theo chuyên mục
-        </a>
-        <a href="/archives" class="inline-flex min-h-11 items-center rounded-lg border border-line px-5 text-sm font-semibold text-ink no-underline transition hover:border-ink">
-          Xem tất cả bài viết
-        </a>
-      </div>
-    </div>
+  <section class="relative overflow-hidden rounded-[28px] border border-line bg-card shadow-lift">
+    <div class="pointer-events-none absolute inset-0 bg-gradient-to-br from-moss via-card to-cream" aria-hidden="true"></div>
+    <div class="pointer-events-none absolute -left-16 -top-16 h-56 w-56 rounded-full bg-[#cfe0bd] opacity-40 blur-3xl" aria-hidden="true"></div>
+    <div class="pointer-events-none absolute -bottom-20 right-24 h-64 w-64 rounded-full bg-[#e8dfbe] opacity-40 blur-3xl" aria-hidden="true"></div>
+    
+<svg viewBox="0 0 220 260" fill="none" xmlns="http://www.w3.org/2000/svg" class="pointer-events-none absolute -right-4 bottom-0 h-40 w-36 opacity-60 md:left-[56%] md:right-auto md:h-60 md:w-52 md:opacity-90" aria-hidden="true" focusable="false">
+  
+    <path d="M112 252 Q 88 150, 30 58" stroke="#7c9b72" stroke-width="2" stroke-linecap="round" />
+    
+      <g transform="translate(102.9 217.6) rotate(-60.5) scale(1.25)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#8fb083" opacity="0.81" />
+      </g>
+    
+      <g transform="translate(97.2 199.6) rotate(-56.3) scale(1.19)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#bcd3a8" opacity="0.90" />
+      </g>
+    
+      <g transform="translate(97.2 199.6) rotate(-160.3) scale(1.07)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#9dbb8f" opacity="0.90" />
+      </g>
+    
+      <g transform="translate(91.0 181.8) rotate(-156.0) scale(1.14)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#cfe0bd" opacity="0.72" />
+      </g>
+    
+      <g transform="translate(84.3 164.2) rotate(-59.8) scale(1.09)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#7fa574" opacity="0.81" />
+      </g>
+    
+      <g transform="translate(84.3 164.2) rotate(-163.8) scale(0.97)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#8fb083" opacity="0.81" />
+      </g>
+    
+      <g transform="translate(77.0 146.7) rotate(-67.5) scale(1.03)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#9dbb8f" opacity="0.90" />
+      </g>
+    
+      <g transform="translate(69.2 129.4) rotate(-63.2) scale(0.98)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#a9c398" opacity="0.72" />
+      </g>
+    
+      <g transform="translate(69.2 129.4) rotate(-167.2) scale(0.86)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#cfe0bd" opacity="0.72" />
+      </g>
+    
+      <g transform="translate(60.8 112.2) rotate(-70.9) scale(0.92)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#8fb083" opacity="0.81" />
+      </g>
+    
+      <g transform="translate(51.8 95.2) rotate(-66.6) scale(0.87)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#bcd3a8" opacity="0.90" />
+      </g>
+    
+      <g transform="translate(51.8 95.2) rotate(-170.6) scale(0.75)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#9dbb8f" opacity="0.90" />
+      </g>
+    
+      <g transform="translate(42.3 78.4) rotate(-166.2) scale(0.82)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#cfe0bd" opacity="0.72" />
+      </g>
+    
+      <g transform="translate(32.3 61.7) rotate(-69.9) scale(0.76)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#7fa574" opacity="0.81" />
+      </g>
+    
+      <g transform="translate(32.3 61.7) rotate(-173.9) scale(0.64)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#8fb083" opacity="0.81" />
+      </g>
+    
+    
+    <g transform="translate(32.3 61.7) rotate(-121.9) scale(0.55)">
+      <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#a9c398" opacity="0.9" />
+    </g>
+  
+    <path d="M112 252 Q 106 130, 92 20" stroke="#6f9270" stroke-width="2" stroke-linecap="round" />
+    
+      <g transform="translate(109.7 210.9) rotate(-47.5) scale(1.25)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#bcd3a8" opacity="0.90" />
+      </g>
+    
+      <g transform="translate(108.3 189.4) rotate(-41.9) scale(1.19)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#cfe0bd" opacity="0.72" />
+      </g>
+    
+      <g transform="translate(108.3 189.4) rotate(-145.9) scale(1.07)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#a9c398" opacity="0.72" />
+      </g>
+    
+      <g transform="translate(106.8 168.1) rotate(-140.3) scale(1.14)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#7fa574" opacity="0.81" />
+      </g>
+    
+      <g transform="translate(105.2 147.0) rotate(-42.7) scale(1.09)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#9dbb8f" opacity="0.90" />
+      </g>
+    
+      <g transform="translate(105.2 147.0) rotate(-146.7) scale(0.97)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#bcd3a8" opacity="0.90" />
+      </g>
+    
+      <g transform="translate(103.4 126.1) rotate(-49.1) scale(1.03)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#a9c398" opacity="0.72" />
+      </g>
+    
+      <g transform="translate(101.5 105.3) rotate(-43.5) scale(0.98)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#8fb083" opacity="0.81" />
+      </g>
+    
+      <g transform="translate(101.5 105.3) rotate(-147.5) scale(0.86)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#7fa574" opacity="0.81" />
+      </g>
+    
+      <g transform="translate(99.4 84.8) rotate(-49.9) scale(0.92)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#bcd3a8" opacity="0.90" />
+      </g>
+    
+      <g transform="translate(97.3 64.5) rotate(-44.3) scale(0.87)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#cfe0bd" opacity="0.72" />
+      </g>
+    
+      <g transform="translate(97.3 64.5) rotate(-148.3) scale(0.75)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#a9c398" opacity="0.72" />
+      </g>
+    
+      <g transform="translate(95.0 44.3) rotate(-142.7) scale(0.82)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#7fa574" opacity="0.81" />
+      </g>
+    
+      <g transform="translate(92.6 24.4) rotate(-45.2) scale(0.76)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#9dbb8f" opacity="0.90" />
+      </g>
+    
+      <g transform="translate(92.6 24.4) rotate(-149.2) scale(0.64)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#bcd3a8" opacity="0.90" />
+      </g>
+    
+    
+    <g transform="translate(92.6 24.4) rotate(-97.2) scale(0.55)">
+      <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#8fb083" opacity="0.9" />
+    </g>
+  
+    <path d="M112 252 Q 126 140, 150 30" stroke="#7c9b72" stroke-width="2" stroke-linecap="round" />
+    
+      <g transform="translate(117.0 214.0) rotate(-36.0) scale(1.25)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#cfe0bd" opacity="0.72" />
+      </g>
+    
+      <g transform="translate(120.0 193.9) rotate(-29.5) scale(1.19)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#7fa574" opacity="0.81" />
+      </g>
+    
+      <g transform="translate(120.0 193.9) rotate(-133.5) scale(1.07)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#8fb083" opacity="0.81" />
+      </g>
+    
+      <g transform="translate(123.0 173.8) rotate(-127.1) scale(1.14)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#9dbb8f" opacity="0.90" />
+      </g>
+    
+      <g transform="translate(126.3 153.8) rotate(-28.6) scale(1.09)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#a9c398" opacity="0.72" />
+      </g>
+    
+      <g transform="translate(126.3 153.8) rotate(-132.6) scale(0.97)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#cfe0bd" opacity="0.72" />
+      </g>
+    
+      <g transform="translate(129.6 133.8) rotate(-34.1) scale(1.03)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#8fb083" opacity="0.81" />
+      </g>
+    
+      <g transform="translate(133.2 113.9) rotate(-27.7) scale(0.98)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#bcd3a8" opacity="0.90" />
+      </g>
+    
+      <g transform="translate(133.2 113.9) rotate(-131.7) scale(0.86)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#9dbb8f" opacity="0.90" />
+      </g>
+    
+      <g transform="translate(136.9 94.0) rotate(-33.2) scale(0.92)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#cfe0bd" opacity="0.72" />
+      </g>
+    
+      <g transform="translate(140.8 74.1) rotate(-26.7) scale(0.87)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#7fa574" opacity="0.81" />
+      </g>
+    
+      <g transform="translate(140.8 74.1) rotate(-130.7) scale(0.75)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#8fb083" opacity="0.81" />
+      </g>
+    
+      <g transform="translate(144.8 54.2) rotate(-124.3) scale(0.82)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#9dbb8f" opacity="0.90" />
+      </g>
+    
+      <g transform="translate(149.0 34.4) rotate(-25.8) scale(0.76)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#a9c398" opacity="0.72" />
+      </g>
+    
+      <g transform="translate(149.0 34.4) rotate(-129.8) scale(0.64)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#cfe0bd" opacity="0.72" />
+      </g>
+    
+    
+    <g transform="translate(149.0 34.4) rotate(-77.8) scale(0.55)">
+      <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#bcd3a8" opacity="0.9" />
+    </g>
+  
+    <path d="M112 252 Q 142 165, 192 70" stroke="#6f9270" stroke-width="2" stroke-linecap="round" />
+    
+      <g transform="translate(122.8 222.2) rotate(-23.3) scale(1.25)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#7fa574" opacity="0.81" />
+      </g>
+    
+      <g transform="translate(129.0 206.2) rotate(-16.4) scale(1.19)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#9dbb8f" opacity="0.90" />
+      </g>
+    
+      <g transform="translate(129.0 206.2) rotate(-120.4) scale(1.07)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#bcd3a8" opacity="0.90" />
+      </g>
+    
+      <g transform="translate(135.4 190.1) rotate(-113.6) scale(1.14)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#a9c398" opacity="0.72" />
+      </g>
+    
+      <g transform="translate(142.3 173.9) rotate(-14.8) scale(1.09)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#8fb083" opacity="0.81" />
+      </g>
+    
+      <g transform="translate(142.3 173.9) rotate(-118.8) scale(0.97)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#7fa574" opacity="0.81" />
+      </g>
+    
+      <g transform="translate(149.4 157.5) rotate(-20.0) scale(1.03)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#bcd3a8" opacity="0.90" />
+      </g>
+    
+      <g transform="translate(156.9 141.0) rotate(-13.2) scale(0.98)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#cfe0bd" opacity="0.72" />
+      </g>
+    
+      <g transform="translate(156.9 141.0) rotate(-117.2) scale(0.86)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#a9c398" opacity="0.72" />
+      </g>
+    
+      <g transform="translate(164.7 124.4) rotate(-18.5) scale(0.92)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#7fa574" opacity="0.81" />
+      </g>
+    
+      <g transform="translate(172.8 107.7) rotate(-11.8) scale(0.87)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#9dbb8f" opacity="0.90" />
+      </g>
+    
+      <g transform="translate(172.8 107.7) rotate(-115.8) scale(0.75)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#bcd3a8" opacity="0.90" />
+      </g>
+    
+      <g transform="translate(181.2 90.8) rotate(-109.1) scale(0.82)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#a9c398" opacity="0.72" />
+      </g>
+    
+      <g transform="translate(190.0 73.8) rotate(-10.4) scale(0.76)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#8fb083" opacity="0.81" />
+      </g>
+    
+      <g transform="translate(190.0 73.8) rotate(-114.4) scale(0.64)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#7fa574" opacity="0.81" />
+      </g>
+    
+    
+    <g transform="translate(190.0 73.8) rotate(-62.4) scale(0.55)">
+      <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#cfe0bd" opacity="0.9" />
+    </g>
+  
+    <path d="M112 252 Q 80 205, 26 148" stroke="#7c9b72" stroke-width="2" stroke-linecap="round" />
+    
+      <g transform="translate(100.5 235.7) rotate(-80.3) scale(1.25)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#9dbb8f" opacity="0.90" />
+      </g>
+    
+      <g transform="translate(93.9 226.9) rotate(-75.3) scale(1.19)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#a9c398" opacity="0.72" />
+      </g>
+    
+      <g transform="translate(93.9 226.9) rotate(-179.3) scale(1.07)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#cfe0bd" opacity="0.72" />
+      </g>
+    
+      <g transform="translate(86.9 217.9) rotate(-174.2) scale(1.14)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#8fb083" opacity="0.81" />
+      </g>
+    
+      <g transform="translate(79.6 208.7) rotate(-77.0) scale(1.09)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#bcd3a8" opacity="0.90" />
+      </g>
+    
+      <g transform="translate(79.6 208.7) rotate(-181.0) scale(0.97)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#9dbb8f" opacity="0.90" />
+      </g>
+    
+      <g transform="translate(71.9 199.4) rotate(-83.9) scale(1.03)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#cfe0bd" opacity="0.72" />
+      </g>
+    
+      <g transform="translate(63.9 189.9) rotate(-78.6) scale(0.98)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#7fa574" opacity="0.81" />
+      </g>
+    
+      <g transform="translate(63.9 189.9) rotate(-182.6) scale(0.86)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#8fb083" opacity="0.81" />
+      </g>
+    
+      <g transform="translate(55.5 180.2) rotate(-85.4) scale(0.92)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#9dbb8f" opacity="0.90" />
+      </g>
+    
+      <g transform="translate(46.7 170.4) rotate(-80.0) scale(0.87)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#a9c398" opacity="0.72" />
+      </g>
+    
+      <g transform="translate(46.7 170.4) rotate(-184.0) scale(0.75)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#cfe0bd" opacity="0.72" />
+      </g>
+    
+      <g transform="translate(37.6 160.4) rotate(-178.7) scale(0.82)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#8fb083" opacity="0.81" />
+      </g>
+    
+      <g transform="translate(28.2 150.3) rotate(-81.3) scale(0.76)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#bcd3a8" opacity="0.90" />
+      </g>
+    
+      <g transform="translate(28.2 150.3) rotate(-185.3) scale(0.64)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#9dbb8f" opacity="0.90" />
+      </g>
+    
+    
+    <g transform="translate(28.2 150.3) rotate(-133.3) scale(0.55)">
+      <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#7fa574" opacity="0.9" />
+    </g>
+  
+    <path d="M112 252 Q 148 208, 198 152" stroke="#6f9270" stroke-width="2" stroke-linecap="round" />
+    
+      <g transform="translate(124.6 236.7) rotate(-4.2) scale(1.25)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#a9c398" opacity="0.72" />
+      </g>
+    
+      <g transform="translate(131.7 228.3) rotate(2.1) scale(1.19)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#8fb083" opacity="0.81" />
+      </g>
+    
+      <g transform="translate(131.7 228.3) rotate(-101.9) scale(1.07)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#7fa574" opacity="0.81" />
+      </g>
+    
+      <g transform="translate(138.9 219.7) rotate(-95.7) scale(1.14)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#bcd3a8" opacity="0.90" />
+      </g>
+    
+      <g transform="translate(146.4 211.0) rotate(2.5) scale(1.09)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#cfe0bd" opacity="0.72" />
+      </g>
+    
+      <g transform="translate(146.4 211.0) rotate(-101.5) scale(0.97)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#a9c398" opacity="0.72" />
+      </g>
+    
+      <g transform="translate(154.1 202.0) rotate(-3.2) scale(1.03)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#7fa574" opacity="0.81" />
+      </g>
+    
+      <g transform="translate(162.0 192.8) rotate(3.0) scale(0.98)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#9dbb8f" opacity="0.90" />
+      </g>
+    
+      <g transform="translate(162.0 192.8) rotate(-101.0) scale(0.86)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#bcd3a8" opacity="0.90" />
+      </g>
+    
+      <g transform="translate(170.2 183.5) rotate(-2.8) scale(0.92)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#a9c398" opacity="0.72" />
+      </g>
+    
+      <g transform="translate(178.6 173.9) rotate(3.4) scale(0.87)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#8fb083" opacity="0.81" />
+      </g>
+    
+      <g transform="translate(178.6 173.9) rotate(-100.6) scale(0.75)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#7fa574" opacity="0.81" />
+      </g>
+    
+      <g transform="translate(187.2 164.2) rotate(-94.5) scale(0.82)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#bcd3a8" opacity="0.90" />
+      </g>
+    
+      <g transform="translate(196.0 154.2) rotate(3.7) scale(0.76)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#cfe0bd" opacity="0.72" />
+      </g>
+    
+      <g transform="translate(196.0 154.2) rotate(-100.3) scale(0.64)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#a9c398" opacity="0.72" />
+      </g>
+    
+    
+    <g transform="translate(196.0 154.2) rotate(-48.3) scale(0.55)">
+      <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#9dbb8f" opacity="0.9" />
+    </g>
+  
+    <path d="M112 252 Q 112 180, 118 116" stroke="#7c9b72" stroke-width="2" stroke-linecap="round" />
+    
+      <g transform="translate(112.2 227.8) rotate(-43.2) scale(1.25)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#8fb083" opacity="0.81" />
+      </g>
+    
+      <g transform="translate(112.4 215.1) rotate(-36.7) scale(1.19)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#bcd3a8" opacity="0.90" />
+      </g>
+    
+      <g transform="translate(112.4 215.1) rotate(-140.7) scale(1.07)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#9dbb8f" opacity="0.90" />
+      </g>
+    
+      <g transform="translate(112.7 202.6) rotate(-134.3) scale(1.14)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#cfe0bd" opacity="0.72" />
+      </g>
+    
+      <g transform="translate(113.2 190.2) rotate(-35.8) scale(1.09)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#7fa574" opacity="0.81" />
+      </g>
+    
+      <g transform="translate(113.2 190.2) rotate(-139.8) scale(0.97)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#8fb083" opacity="0.81" />
+      </g>
+    
+      <g transform="translate(113.7 177.9) rotate(-41.3) scale(1.03)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#9dbb8f" opacity="0.90" />
+      </g>
+    
+      <g transform="translate(114.3 165.8) rotate(-34.8) scale(0.98)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#a9c398" opacity="0.72" />
+      </g>
+    
+      <g transform="translate(114.3 165.8) rotate(-138.8) scale(0.86)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#cfe0bd" opacity="0.72" />
+      </g>
+    
+      <g transform="translate(115.0 153.8) rotate(-40.3) scale(0.92)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#8fb083" opacity="0.81" />
+      </g>
+    
+      <g transform="translate(115.8 141.9) rotate(-33.8) scale(0.87)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#bcd3a8" opacity="0.90" />
+      </g>
+    
+      <g transform="translate(115.8 141.9) rotate(-137.8) scale(0.75)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#9dbb8f" opacity="0.90" />
+      </g>
+    
+      <g transform="translate(116.8 130.2) rotate(-131.3) scale(0.82)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#cfe0bd" opacity="0.72" />
+      </g>
+    
+      <g transform="translate(117.8 118.6) rotate(-32.8) scale(0.76)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#7fa574" opacity="0.81" />
+      </g>
+    
+      <g transform="translate(117.8 118.6) rotate(-136.8) scale(0.64)">
+        <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#8fb083" opacity="0.81" />
+      </g>
+    
+    
+    <g transform="translate(117.8 118.6) rotate(-84.8) scale(0.55)">
+      <path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#a9c398" opacity="0.9" />
+    </g>
+  
+</svg>
 
-    <div class="flex aspect-[4/3] flex-col items-center justify-center rounded-lg border border-line bg-white px-8 text-center shadow-lift">
-      <img src="/images/kiwi-flaticon.png" alt="" class="h-20 w-20 object-contain" loading="eager" />
-      <p class="mt-5 whitespace-nowrap text-base font800 leading-6 text-ink">Dương & Đào Family</p>
-      <p class="mt-1 whitespace-nowrap text-[10px] leading-4 text-muted">Nhật ký gia đình, học hỏi và những chuyến đi</p>
-      <div class="mt-7 h-px w-full bg-line"></div>
-      <div class="mt-4 flex items-center justify-center gap-6 text-[10px] font700 text-leaf">
-        <span>Sống</span>
-        <span>Học</span>
-        <span>Đi</span>
-        <span>Yêu</span>
+
+    <div class="relative grid gap-8 p-8 md:grid-cols-[minmax(0,1fr)_230px] md:items-center md:p-12">
+      <div class="max-w-2xl">
+        <p class="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wide text-leaf">
+          <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" aria-hidden="true" focusable="false">
+  <path d="M3.5 16.5 C 3.5 9, 9 3.5, 16.5 3.5 C 16.5 11, 11 16.5, 3.5 16.5 Z" fill="currentColor" opacity="0.22" />
+  <path d="M3.5 16.5 C 3.5 9, 9 3.5, 16.5 3.5 M6.2 13.8 C 8.8 13.2 11.9 10.1 12.9 7.1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" />
+</svg>
+
+          Nhật ký của Dương &amp; Đào
+        </p>
+        <h1 class="mt-4 font-display text-4xl font-semibold leading-tight text-ink md:text-5xl" data-greeting>
+          Chào bạn ghé chơi 🌿
+        </h1>
+        <p class="mt-5 max-w-xl text-lg leading-8 text-muted" data-greeting-sub>
+          Chậm lại một chút, chọn một bài để đọc cùng nhau nhé.
+        </p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="/categories" class="inline-flex min-h-11 items-center rounded-full bg-leaf px-6 text-sm font-semibold text-white no-underline shadow-leafy transition hover:bg-pine">
+            Đọc theo chuyên mục
+          </a>
+          <a href="/archives" class="inline-flex min-h-11 items-center rounded-full border border-line bg-card/80 px-6 text-sm font-semibold text-ink no-underline transition hover:border-leaf hover:text-leaf">
+            Xem tất cả bài viết
+          </a>
+        </div>
+      </div>
+
+      <div class="mx-auto flex w-full max-w-[230px] flex-col items-center text-center">
+        <span class="inline-flex h-32 w-32 items-center justify-center rounded-full bg-card ring-4 ring-moss md:h-36 md:w-36">
+          <img src="/images/kiwi-flaticon.png" alt="" class="h-20 w-20 object-contain md:h-24 md:w-24" loading="eager" />
+        </span>
+        <p class="mt-4 font-display text-base font-semibold text-ink">Dương &amp; Đào Family</p>
+        <div class="mt-3 flex items-center justify-center gap-4 text-xs font-semibold text-leaf">
+          <span>Sống</span>
+          <span aria-hidden="true">·</span>
+          <span>Học</span>
+          <span aria-hidden="true">·</span>
+          <span>Đi</span>
+          <span aria-hidden="true">·</span>
+          <span>Yêu</span>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
+
+  <script>
+    (function () {
+      var hour = new Date().getHours();
+      var greeting, sub;
+      if (hour >= 5 && hour < 11) {
+        greeting = "Chào buổi sáng ☀️";
+        sub = "Nắng vừa lên — pha một tách trà, chọn một bài để đọc nhé.";
+      } else if (hour >= 11 && hour < 14) {
+        greeting = "Chào buổi trưa 🍃";
+        sub = "Nghỉ trưa một chút, đọc vài dòng cho nhẹ đầu nhé.";
+      } else if (hour >= 14 && hour < 18) {
+        greeting = "Chào buổi chiều 🌿";
+        sub = "Chiều êm — ghé vườn chữ của Dương & Đào một lát nhé.";
+      } else if (hour >= 18 && hour < 23) {
+        greeting = "Buổi tối an lành 🌙";
+        sub = "Đèn đã lên — cùng đọc lại một điều gì đó ấm áp nhé.";
+      } else {
+        greeting = "Khuya rồi 🌙";
+        sub = "Còn thức à? Đọc một bài nhẹ nhàng rồi ngủ ngon nhé.";
+      }
+      var title = document.querySelector("[data-greeting]");
+      var subEl = document.querySelector("[data-greeting-sub]");
+      if (title) title.textContent = greeting;
+      if (subEl) subEl.textContent = sub;
+    })();
+  </script>
 
   
-    <section class="grid gap-8 lg:grid-cols-[minmax(0,1fr)_320px]">
-      <article class="border-b border-line pb-8 lg:border-b-0 lg:border-r lg:pr-8">
-        <a href="https://duongdao.family/malena-moi-tinh-dau-cua-toi/" class="group grid gap-6 no-underline md:grid-cols-[220px_minmax(0,1fr)]">
+    <section class="grid gap-8 lg:grid-cols-[minmax(0,1fr)_300px]">
+      <article class="group relative overflow-hidden rounded-[24px] border border-line bg-card shadow-leafy transition hover:-translate-y-0.5 hover:shadow-lift">
+        <a href="https://duongdao.family/malena-moi-tinh-dau-cua-toi/" class="grid gap-6 p-6 no-underline md:grid-cols-[240px_minmax(0,1fr)] md:p-8">
           
-          <img src="/images/4dfb9bb6-0e3a-4263-a140-233fb50bb760/Untitled.png" alt="" class="aspect-[4/3] w-full rounded-lg object-cover" loading="lazy" />
+          <img src="/images/4dfb9bb6-0e3a-4263-a140-233fb50bb760/Untitled.png" alt="" class="aspect-[4/3] w-full rounded-2xl object-cover" loading="lazy" />
           <div>
-            <p class="text-sm font-semibold uppercase text-muted">Mới nhất</p>
-            <h2 class="mt-3 text-2xl font800 leading-tight text-ink group-hover:text-leaf md:text-3xl">
+            <p class="inline-flex items-center rounded-full bg-moss px-3 py-1.5 text-xs font-semibold uppercase tracking-wide text-leaf">Mới nhất</p>
+            <h2 class="mt-4 font-display text-2xl font-semibold leading-snug text-ink transition group-hover:text-leaf md:text-3xl">
               Malèna - Mối tình đầu của tôi
             </h2>
             <p class="mt-3 text-sm text-muted">
               07/03/2017
+              · 4 phút đọc
                · Cô Đào
                · Kiwi cinema
             </p>
-            <p class="mt-5 text-base leading-8 text-muted">
-              Nếu phải xem một bộ phim về tình yêu ngây dại và nghĩa cử nhân văn thì bạn nên xem bộ phim này. “Malena” Mối Tình Đầu Của Tôi đã trở thành bộ phim hot nhất Italia đến tận bây giờ và đưa tên tuổi của Monica Belucci lên hàng sao trên khắp thế giới, đây không phả...
+            <p class="mt-4 text-base leading-8 text-muted">
+              Nếu phải xem một bộ phim về tình yêu ngây dại và nghĩa cử nhân văn thì bạn nên xem bộ phim này. “Malena” Mối Tình Đầu Của Tôi đã trở thành bộ phim hot nhất Italia đến tận bây giờ và đưa tên tuổi của Monica Belucci lên hàng sao trên khắp thế...
             </p>
-            <span class="mt-5 inline-flex text-sm font-semibold text-leaf">Đọc tiếp</span>
+            <span class="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-leaf">
+              Đọc tiếp
+              <span aria-hidden="true">→</span>
+            </span>
           </div>
         </a>
       </article>
 
-      <aside>
-        <p class="text-sm font-semibold uppercase text-muted">Chuyên mục</p>
+      <aside class="rounded-[24px] border border-line bg-card p-6 shadow-leafy">
+        <p class="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wide text-leaf">
+          <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" aria-hidden="true" focusable="false">
+  <path d="M3.5 16.5 C 3.5 9, 9 3.5, 16.5 3.5 C 16.5 11, 11 16.5, 3.5 16.5 Z" fill="currentColor" opacity="0.22" />
+  <path d="M3.5 16.5 C 3.5 9, 9 3.5, 16.5 3.5 M6.2 13.8 C 8.8 13.2 11.9 10.1 12.9 7.1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" />
+</svg>
+
+          Chuyên mục
+        </p>
         <div class="mt-4 flex flex-wrap gap-2">
           
-            <a href="/categories/Cuoc-song-o-Nhat/" class="rounded-lg border border-line px-3 py-2 text-sm font-semibold text-ink no-underline transition hover:border-leaf hover:text-leaf">
+            <a href="/categories/Cuoc-song-o-Nhat/" class="rounded-full border border-line bg-paper px-4 py-2 text-sm font-semibold text-ink no-underline transition hover:border-leaf hover:bg-moss hover:text-leaf">
               Cuộc sống ở Nhật
             </a>
           
-            <a href="/categories/Cam/" class="rounded-lg border border-line px-3 py-2 text-sm font-semibold text-ink no-underline transition hover:border-leaf hover:text-leaf">
+            <a href="/categories/Cam/" class="rounded-full border border-line bg-paper px-4 py-2 text-sm font-semibold text-ink no-underline transition hover:border-leaf hover:bg-moss hover:text-leaf">
               Cảm
             </a>
           
-            <a href="/categories/Ghi/" class="rounded-lg border border-line px-3 py-2 text-sm font-semibold text-ink no-underline transition hover:border-leaf hover:text-leaf">
+            <a href="/categories/Ghi/" class="rounded-full border border-line bg-paper px-4 py-2 text-sm font-semibold text-ink no-underline transition hover:border-leaf hover:bg-moss hover:text-leaf">
               Ghi
             </a>
           
-            <a href="/categories/Hoc/" class="rounded-lg border border-line px-3 py-2 text-sm font-semibold text-ink no-underline transition hover:border-leaf hover:text-leaf">
+            <a href="/categories/Hoc/" class="rounded-full border border-line bg-paper px-4 py-2 text-sm font-semibold text-ink no-underline transition hover:border-leaf hover:bg-moss hover:text-leaf">
               Học
             </a>
           
-            <a href="/categories/Kiwi-cinema/" class="rounded-lg border border-line px-3 py-2 text-sm font-semibold text-ink no-underline transition hover:border-leaf hover:text-leaf">
+            <a href="/categories/Kiwi-cinema/" class="rounded-full border border-line bg-paper px-4 py-2 text-sm font-semibold text-ink no-underline transition hover:border-leaf hover:bg-moss hover:text-leaf">
               Kiwi cinema
             </a>
           
-            <a href="/categories/Kiwi-s-Corner/" class="rounded-lg border border-line px-3 py-2 text-sm font-semibold text-ink no-underline transition hover:border-leaf hover:text-leaf">
+            <a href="/categories/Kiwi-s-Corner/" class="rounded-full border border-line bg-paper px-4 py-2 text-sm font-semibold text-ink no-underline transition hover:border-leaf hover:bg-moss hover:text-leaf">
               Kiwi&#39;s Corner
             </a>
           
-            <a href="/categories/Lam/" class="rounded-lg border border-line px-3 py-2 text-sm font-semibold text-ink no-underline transition hover:border-leaf hover:text-leaf">
+            <a href="/categories/Lam/" class="rounded-full border border-line bg-paper px-4 py-2 text-sm font-semibold text-ink no-underline transition hover:border-leaf hover:bg-moss hover:text-leaf">
               Làm
             </a>
           
-            <a href="/categories/Lam-cha-me/" class="rounded-lg border border-line px-3 py-2 text-sm font-semibold text-ink no-underline transition hover:border-leaf hover:text-leaf">
+            <a href="/categories/Lam-cha-me/" class="rounded-full border border-line bg-paper px-4 py-2 text-sm font-semibold text-ink no-underline transition hover:border-leaf hover:bg-moss hover:text-leaf">
               Làm cha mẹ
             </a>
           
-            <a href="/categories/Nghi/" class="rounded-lg border border-line px-3 py-2 text-sm font-semibold text-ink no-underline transition hover:border-leaf hover:text-leaf">
+            <a href="/categories/Nghi/" class="rounded-full border border-line bg-paper px-4 py-2 text-sm font-semibold text-ink no-underline transition hover:border-leaf hover:bg-moss hover:text-leaf">
               Nghĩ
             </a>
           
-            <a href="/categories/Song/" class="rounded-lg border border-line px-3 py-2 text-sm font-semibold text-ink no-underline transition hover:border-leaf hover:text-leaf">
+            <a href="/categories/Song/" class="rounded-full border border-line bg-paper px-4 py-2 text-sm font-semibold text-ink no-underline transition hover:border-leaf hover:bg-moss hover:text-leaf">
               Sống
             </a>
           
-            <a href="/categories/Thinh/" class="rounded-lg border border-line px-3 py-2 text-sm font-semibold text-ink no-underline transition hover:border-leaf hover:text-leaf">
+            <a href="/categories/Thinh/" class="rounded-full border border-line bg-paper px-4 py-2 text-sm font-semibold text-ink no-underline transition hover:border-leaf hover:bg-moss hover:text-leaf">
               Thịnh
             </a>
           
-            <a href="/categories/Tieng-Nhat/" class="rounded-lg border border-line px-3 py-2 text-sm font-semibold text-ink no-underline transition hover:border-leaf hover:text-leaf">
+            <a href="/categories/Tieng-Nhat/" class="rounded-full border border-line bg-paper px-4 py-2 text-sm font-semibold text-ink no-underline transition hover:border-leaf hover:bg-moss hover:text-leaf">
               Tiếng Nhật
             </a>
           
@@ -210,137 +780,225 @@
     <section>
       <div class="mb-6 flex items-end justify-between gap-4">
         <div>
-          <p class="text-sm font-semibold uppercase text-muted">Bài viết</p>
-          <h2 class="mt-2 text-2xl font800 text-ink">Đọc gần đây</h2>
+          <p class="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wide text-leaf">
+            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" aria-hidden="true" focusable="false">
+  <path d="M3.5 16.5 C 3.5 9, 9 3.5, 16.5 3.5 C 16.5 11, 11 16.5, 3.5 16.5 Z" fill="currentColor" opacity="0.22" />
+  <path d="M3.5 16.5 C 3.5 9, 9 3.5, 16.5 3.5 M6.2 13.8 C 8.8 13.2 11.9 10.1 12.9 7.1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" />
+</svg>
+
+            Bài viết
+          </p>
+          <h2 class="mt-2 font-display text-2xl font-semibold text-ink">Đọc gần đây</h2>
         </div>
-        <a href="/archives" class="hidden text-sm font-semibold text-leaf no-underline md:inline">Tất cả</a>
+        <a href="/archives" class="hidden text-sm font-semibold text-leaf no-underline md:inline">Tất cả →</a>
       </div>
 
-      <div class="divide-y divide-line border-y border-line">
+      <div class="grid gap-4">
         
-          <article>
-            <a href="https://duongdao.family/tu-ky-oi-ban-o-dau/" class="group grid gap-3 py-6 no-underline md:grid-cols-[140px_minmax(0,1fr)]">
-              <time class="text-sm text-muted" datetime="2017-01-06">06/01/2017</time>
-              <div>
-                <h3 class="text-xl font700 leading-8 text-ink group-hover:text-leaf">Tử Kỳ ơi, bạn ở đâu?</h3>
-                <p class="mt-2 text-sm leading-7 text-muted">“It’s the friends you can call up at 4 a.m. That’s matter” - Marlene Dietrich Đó có phải là người bạn mà ta có thể gọi vào lúc 4 giờ sáng hay không mới là vấn đề! Cuộc sống thiếu bạn bè là c...</p>
-                <p class="mt-3 text-xs font-semibold uppercase text-muted">
-                  Cô Đào
-                   · Cảm
+          <article class="group rounded-[20px] border border-line bg-card shadow-sm transition hover:-translate-y-0.5 hover:border-leaf/40 hover:shadow-leafy">
+            <a href="https://duongdao.family/tu-ky-oi-ban-o-dau/" class="grid gap-2 p-6 no-underline">
+              <p class="flex flex-wrap items-center gap-x-2 text-xs text-muted">
+                <time datetime="2017-01-06">06/01/2017</time>
+                <span aria-hidden="true">·</span>
+                <span>2 phút đọc</span>
+                
+                  <span aria-hidden="true">·</span>
+                  <span>Cô Đào</span>
+                
+              </p>
+              <h3 class="font-display text-xl font-semibold leading-8 text-ink transition group-hover:text-leaf">Tử Kỳ ơi, bạn ở đâu?</h3>
+              <p class="text-sm leading-7 text-muted">“It’s the friends you can call up at 4 a.m. That’s matter” - Marlene Dietrich Đó có phải là người bạn mà ta có thể gọi vào lúc 4 giờ sáng hay không mới là vấn đề! Cuộc sống thiếu bạn bè là c...</p>
+              
+                <p class="mt-2 flex flex-wrap gap-2">
+                  
+                    <span class="rounded-full bg-moss px-3 py-1 text-xs font-semibold text-leaf">Cảm</span>
+                  
                 </p>
-              </div>
+              
             </a>
           </article>
         
-          <article>
-            <a href="https://duongdao.family/em-tin-moi-tinh-yeu-deu-co-ket-cuc-buon/" class="group grid gap-3 py-6 no-underline md:grid-cols-[140px_minmax(0,1fr)]">
-              <time class="text-sm text-muted" datetime="2016-10-27">27/10/2016</time>
-              <div>
-                <h3 class="text-xl font700 leading-8 text-ink group-hover:text-leaf">Em tin mọi tình yêu đều có kết cục buồn</h3>
-                <p class="mt-2 text-sm leading-7 text-muted">Mỗi chúng ta đều có hai tình yêu Tình thứ nhất là tình quý báu nhất Là những gì tinh khiết trọn đầu môi Là những gì đỏ hơn cả mặt trời Là những gì sáng rực trong đêm tối Nhưng cũng là đau đớ...</p>
-                <p class="mt-3 text-xs font-semibold uppercase text-muted">
-                  Cô Đào
-                   · Viết
+          <article class="group rounded-[20px] border border-line bg-card shadow-sm transition hover:-translate-y-0.5 hover:border-leaf/40 hover:shadow-leafy">
+            <a href="https://duongdao.family/em-tin-moi-tinh-yeu-deu-co-ket-cuc-buon/" class="grid gap-2 p-6 no-underline">
+              <p class="flex flex-wrap items-center gap-x-2 text-xs text-muted">
+                <time datetime="2016-10-27">27/10/2016</time>
+                <span aria-hidden="true">·</span>
+                <span>2 phút đọc</span>
+                
+                  <span aria-hidden="true">·</span>
+                  <span>Cô Đào</span>
+                
+              </p>
+              <h3 class="font-display text-xl font-semibold leading-8 text-ink transition group-hover:text-leaf">Em tin mọi tình yêu đều có kết cục buồn</h3>
+              <p class="text-sm leading-7 text-muted">Mỗi chúng ta đều có hai tình yêu Tình thứ nhất là tình quý báu nhất Là những gì tinh khiết trọn đầu môi Là những gì đỏ hơn cả mặt trời Là những gì sáng rực trong đêm tối Nhưng cũng là đau đớ...</p>
+              
+                <p class="mt-2 flex flex-wrap gap-2">
+                  
+                    <span class="rounded-full bg-moss px-3 py-1 text-xs font-semibold text-leaf">Viết</span>
+                  
                 </p>
-              </div>
+              
             </a>
           </article>
         
-          <article>
-            <a href="https://duongdao.family/nhan-ngay-nha-giao-noi-ve-ba/" class="group grid gap-3 py-6 no-underline md:grid-cols-[140px_minmax(0,1fr)]">
-              <time class="text-sm text-muted" datetime="2016-10-26">26/10/2016</time>
-              <div>
-                <h3 class="text-xl font700 leading-8 text-ink group-hover:text-leaf">Nhân ngày nhà giáo nói về "Ba"</h3>
-                <p class="mt-2 text-sm leading-7 text-muted">Ba như người thầy vĩ đại trong cuộc đời tôi. Còn tôi lại là sản phẩm lỗi của ba. Ba tôi tìm hiểu cái gì cũng tới nơi tới chốn, đọc nhiều, tìm hiểu kiến thức đủ thể loại, gần gần giống bách k...</p>
-                <p class="mt-3 text-xs font-semibold uppercase text-muted">
-                  Cô Đào
-                   · Cảm
+          <article class="group rounded-[20px] border border-line bg-card shadow-sm transition hover:-translate-y-0.5 hover:border-leaf/40 hover:shadow-leafy">
+            <a href="https://duongdao.family/nhan-ngay-nha-giao-noi-ve-ba/" class="grid gap-2 p-6 no-underline">
+              <p class="flex flex-wrap items-center gap-x-2 text-xs text-muted">
+                <time datetime="2016-10-26">26/10/2016</time>
+                <span aria-hidden="true">·</span>
+                <span>6 phút đọc</span>
+                
+                  <span aria-hidden="true">·</span>
+                  <span>Cô Đào</span>
+                
+              </p>
+              <h3 class="font-display text-xl font-semibold leading-8 text-ink transition group-hover:text-leaf">Nhân ngày nhà giáo nói về "Ba"</h3>
+              <p class="text-sm leading-7 text-muted">Ba như người thầy vĩ đại trong cuộc đời tôi. Còn tôi lại là sản phẩm lỗi của ba. Ba tôi tìm hiểu cái gì cũng tới nơi tới chốn, đọc nhiều, tìm hiểu kiến thức đủ thể loại, gần gần giống bách k...</p>
+              
+                <p class="mt-2 flex flex-wrap gap-2">
+                  
+                    <span class="rounded-full bg-moss px-3 py-1 text-xs font-semibold text-leaf">Cảm</span>
+                  
                 </p>
-              </div>
+              
             </a>
           </article>
         
-          <article>
-            <a href="https://duongdao.family/viet-cho-mot-nguoi-ra-di/" class="group grid gap-3 py-6 no-underline md:grid-cols-[140px_minmax(0,1fr)]">
-              <time class="text-sm text-muted" datetime="2016-10-14">14/10/2016</time>
-              <div>
-                <h3 class="text-xl font700 leading-8 text-ink group-hover:text-leaf">Viết cho một người ra đi</h3>
-                <p class="mt-2 text-sm leading-7 text-muted">Cuộc đời là thế Khi ta chưa kịp yêu người Cuộc đời là thế Khi người chưa nhận ra ta Đã lìa xa mãi Những hình hài chìm dưới châu sa Cuộc đời là thế Người ta chưa kịp yêu nhau Đã ươm mầm đắng...</p>
-                <p class="mt-3 text-xs font-semibold uppercase text-muted">
-                  Cô Đào
-                   · Viết
+          <article class="group rounded-[20px] border border-line bg-card shadow-sm transition hover:-translate-y-0.5 hover:border-leaf/40 hover:shadow-leafy">
+            <a href="https://duongdao.family/viet-cho-mot-nguoi-ra-di/" class="grid gap-2 p-6 no-underline">
+              <p class="flex flex-wrap items-center gap-x-2 text-xs text-muted">
+                <time datetime="2016-10-14">14/10/2016</time>
+                <span aria-hidden="true">·</span>
+                <span>1 phút đọc</span>
+                
+                  <span aria-hidden="true">·</span>
+                  <span>Cô Đào</span>
+                
+              </p>
+              <h3 class="font-display text-xl font-semibold leading-8 text-ink transition group-hover:text-leaf">Viết cho một người ra đi</h3>
+              <p class="text-sm leading-7 text-muted">Cuộc đời là thế Khi ta chưa kịp yêu người Cuộc đời là thế Khi người chưa nhận ra ta Đã lìa xa mãi Những hình hài chìm dưới châu sa Cuộc đời là thế Người ta chưa kịp yêu nhau Đã ươm mầm đắng...</p>
+              
+                <p class="mt-2 flex flex-wrap gap-2">
+                  
+                    <span class="rounded-full bg-moss px-3 py-1 text-xs font-semibold text-leaf">Viết</span>
+                  
                 </p>
-              </div>
+              
             </a>
           </article>
         
-          <article>
-            <a href="https://duongdao.family/tinh-ban-cung-mong-nhu-to/" class="group grid gap-3 py-6 no-underline md:grid-cols-[140px_minmax(0,1fr)]">
-              <time class="text-sm text-muted" datetime="2016-10-10">10/10/2016</time>
-              <div>
-                <h3 class="text-xl font700 leading-8 text-ink group-hover:text-leaf">Tình bạn cũng mỏng như tơ</h3>
-                <p class="mt-2 text-sm leading-7 text-muted">Kể từ khi cậu Út tôi, một người rất đẹp trai nhiệt tình sống tốt với bạn bè, luôn lạc quan với cuộc sống, bỗng dưng bị tai nạn, và rồi cậu bị vi-rút lao não xâm nhập, trở thành người mất hết...</p>
-                <p class="mt-3 text-xs font-semibold uppercase text-muted">
-                  Cô Đào
-                   · Cảm
+          <article class="group rounded-[20px] border border-line bg-card shadow-sm transition hover:-translate-y-0.5 hover:border-leaf/40 hover:shadow-leafy">
+            <a href="https://duongdao.family/tinh-ban-cung-mong-nhu-to/" class="grid gap-2 p-6 no-underline">
+              <p class="flex flex-wrap items-center gap-x-2 text-xs text-muted">
+                <time datetime="2016-10-10">10/10/2016</time>
+                <span aria-hidden="true">·</span>
+                <span>2 phút đọc</span>
+                
+                  <span aria-hidden="true">·</span>
+                  <span>Cô Đào</span>
+                
+              </p>
+              <h3 class="font-display text-xl font-semibold leading-8 text-ink transition group-hover:text-leaf">Tình bạn cũng mỏng như tơ</h3>
+              <p class="text-sm leading-7 text-muted">Kể từ khi cậu Út tôi, một người rất đẹp trai nhiệt tình sống tốt với bạn bè, luôn lạc quan với cuộc sống, bỗng dưng bị tai nạn, và rồi cậu bị vi-rút lao não xâm nhập, trở thành người mất hết...</p>
+              
+                <p class="mt-2 flex flex-wrap gap-2">
+                  
+                    <span class="rounded-full bg-moss px-3 py-1 text-xs font-semibold text-leaf">Cảm</span>
+                  
                 </p>
-              </div>
+              
             </a>
           </article>
         
-          <article>
-            <a href="https://duongdao.family/biet-khi-nao-la-hanh-phuc/" class="group grid gap-3 py-6 no-underline md:grid-cols-[140px_minmax(0,1fr)]">
-              <time class="text-sm text-muted" datetime="2016-10-05">05/10/2016</time>
-              <div>
-                <h3 class="text-xl font700 leading-8 text-ink group-hover:text-leaf">Biết khi nao là hạnh phúc</h3>
-                <p class="mt-2 text-sm leading-7 text-muted">Bạn tôi gọi điện hỏi: Cuối tháng tao cưới, mày đi được không? Nhỏ bạn chơi thân từ thời trung học nhưng đã lâu quá rồi không gặp cũng chẳng trò chuyện. Thỉnh thoảng lúc mới rời khỏi trường c...</p>
-                <p class="mt-3 text-xs font-semibold uppercase text-muted">
-                  Cô Đào
-                   · Cảm
+          <article class="group rounded-[20px] border border-line bg-card shadow-sm transition hover:-translate-y-0.5 hover:border-leaf/40 hover:shadow-leafy">
+            <a href="https://duongdao.family/biet-khi-nao-la-hanh-phuc/" class="grid gap-2 p-6 no-underline">
+              <p class="flex flex-wrap items-center gap-x-2 text-xs text-muted">
+                <time datetime="2016-10-05">05/10/2016</time>
+                <span aria-hidden="true">·</span>
+                <span>2 phút đọc</span>
+                
+                  <span aria-hidden="true">·</span>
+                  <span>Cô Đào</span>
+                
+              </p>
+              <h3 class="font-display text-xl font-semibold leading-8 text-ink transition group-hover:text-leaf">Biết khi nao là hạnh phúc</h3>
+              <p class="text-sm leading-7 text-muted">Bạn tôi gọi điện hỏi: Cuối tháng tao cưới, mày đi được không? Nhỏ bạn chơi thân từ thời trung học nhưng đã lâu quá rồi không gặp cũng chẳng trò chuyện. Thỉnh thoảng lúc mới rời khỏi trường c...</p>
+              
+                <p class="mt-2 flex flex-wrap gap-2">
+                  
+                    <span class="rounded-full bg-moss px-3 py-1 text-xs font-semibold text-leaf">Cảm</span>
+                  
                 </p>
-              </div>
+              
             </a>
           </article>
         
-          <article>
-            <a href="https://duongdao.family/cau-sau-toi/" class="group grid gap-3 py-6 no-underline md:grid-cols-[140px_minmax(0,1fr)]">
-              <time class="text-sm text-muted" datetime="2016-09-06">06/09/2016</time>
-              <div>
-                <h3 class="text-xl font700 leading-8 text-ink group-hover:text-leaf">Cậu Sáu tôi</h3>
-                <p class="mt-2 text-sm leading-7 text-muted">Có những nhân tài không được xã hội trọng dụng, không có cơ hội chứng minh bản thân. Nhưng họ vẫn có ích cho gia đình họ, cho chính bản thân họ. Nhược điểm duy nhất chính là vì họ quá hiền l...</p>
-                <p class="mt-3 text-xs font-semibold uppercase text-muted">
-                  Cô Đào
-                   · Cảm
+          <article class="group rounded-[20px] border border-line bg-card shadow-sm transition hover:-translate-y-0.5 hover:border-leaf/40 hover:shadow-leafy">
+            <a href="https://duongdao.family/cau-sau-toi/" class="grid gap-2 p-6 no-underline">
+              <p class="flex flex-wrap items-center gap-x-2 text-xs text-muted">
+                <time datetime="2016-09-06">06/09/2016</time>
+                <span aria-hidden="true">·</span>
+                <span>5 phút đọc</span>
+                
+                  <span aria-hidden="true">·</span>
+                  <span>Cô Đào</span>
+                
+              </p>
+              <h3 class="font-display text-xl font-semibold leading-8 text-ink transition group-hover:text-leaf">Cậu Sáu tôi</h3>
+              <p class="text-sm leading-7 text-muted">Có những nhân tài không được xã hội trọng dụng, không có cơ hội chứng minh bản thân. Nhưng họ vẫn có ích cho gia đình họ, cho chính bản thân họ. Nhược điểm duy nhất chính là vì họ quá hiền l...</p>
+              
+                <p class="mt-2 flex flex-wrap gap-2">
+                  
+                    <span class="rounded-full bg-moss px-3 py-1 text-xs font-semibold text-leaf">Cảm</span>
+                  
                 </p>
-              </div>
+              
             </a>
           </article>
         
-          <article>
-            <a href="https://duongdao.family/neu-em-khong-dep-thi-sao/" class="group grid gap-3 py-6 no-underline md:grid-cols-[140px_minmax(0,1fr)]">
-              <time class="text-sm text-muted" datetime="2016-08-04">04/08/2016</time>
-              <div>
-                <h3 class="text-xl font700 leading-8 text-ink group-hover:text-leaf">Nếu em không đẹp thì sao?</h3>
-                <p class="mt-2 text-sm leading-7 text-muted">Người ta bảo: gái đẹp, có quyền! Và có những cô gái không đẹp vùi mình vào trong gối, gác tay lên trán suy nghĩ làm cách nào để mình được đẹp, được có quyền. Tự ti ẩn mình dần trước những bu...</p>
-                <p class="mt-3 text-xs font-semibold uppercase text-muted">
-                  Cô Đào
-                   · Cảm
+          <article class="group rounded-[20px] border border-line bg-card shadow-sm transition hover:-translate-y-0.5 hover:border-leaf/40 hover:shadow-leafy">
+            <a href="https://duongdao.family/neu-em-khong-dep-thi-sao/" class="grid gap-2 p-6 no-underline">
+              <p class="flex flex-wrap items-center gap-x-2 text-xs text-muted">
+                <time datetime="2016-08-04">04/08/2016</time>
+                <span aria-hidden="true">·</span>
+                <span>5 phút đọc</span>
+                
+                  <span aria-hidden="true">·</span>
+                  <span>Cô Đào</span>
+                
+              </p>
+              <h3 class="font-display text-xl font-semibold leading-8 text-ink transition group-hover:text-leaf">Nếu em không đẹp thì sao?</h3>
+              <p class="text-sm leading-7 text-muted">Người ta bảo: gái đẹp, có quyền! Và có những cô gái không đẹp vùi mình vào trong gối, gác tay lên trán suy nghĩ làm cách nào để mình được đẹp, được có quyền. Tự ti ẩn mình dần trước những bu...</p>
+              
+                <p class="mt-2 flex flex-wrap gap-2">
+                  
+                    <span class="rounded-full bg-moss px-3 py-1 text-xs font-semibold text-leaf">Cảm</span>
+                  
                 </p>
-              </div>
+              
             </a>
           </article>
         
-          <article>
-            <a href="https://duongdao.family/duc-tin-se-cuu-roi-anh-em/" class="group grid gap-3 py-6 no-underline md:grid-cols-[140px_minmax(0,1fr)]">
-              <time class="text-sm text-muted" datetime="2016-02-05">05/02/2016</time>
-              <div>
-                <h3 class="text-xl font700 leading-8 text-ink group-hover:text-leaf">Đức tin sẽ cứu rỗi anh em</h3>
-                <p class="mt-2 text-sm leading-7 text-muted">Hôm bữa đi lễ nghe cha giảng về ĐỨC TIN rất hay, Hôm nay xin tóm lại như vầy: Ví dụ anh chị em có con, nó lớn lên, anh chị em cho nó đi học đi chơi giao lưu với bạn bè của chúng. Chúng xin a...</p>
-                <p class="mt-3 text-xs font-semibold uppercase text-muted">
-                  Cô Đào
-                   · Cảm
+          <article class="group rounded-[20px] border border-line bg-card shadow-sm transition hover:-translate-y-0.5 hover:border-leaf/40 hover:shadow-leafy">
+            <a href="https://duongdao.family/duc-tin-se-cuu-roi-anh-em/" class="grid gap-2 p-6 no-underline">
+              <p class="flex flex-wrap items-center gap-x-2 text-xs text-muted">
+                <time datetime="2016-02-05">05/02/2016</time>
+                <span aria-hidden="true">·</span>
+                <span>3 phút đọc</span>
+                
+                  <span aria-hidden="true">·</span>
+                  <span>Cô Đào</span>
+                
+              </p>
+              <h3 class="font-display text-xl font-semibold leading-8 text-ink transition group-hover:text-leaf">Đức tin sẽ cứu rỗi anh em</h3>
+              <p class="text-sm leading-7 text-muted">Hôm bữa đi lễ nghe cha giảng về ĐỨC TIN rất hay, Hôm nay xin tóm lại như vầy: Ví dụ anh chị em có con, nó lớn lên, anh chị em cho nó đi học đi chơi giao lưu với bạn bè của chúng. Chúng xin a...</p>
+              
+                <p class="mt-2 flex flex-wrap gap-2">
+                  
+                    <span class="rounded-full bg-moss px-3 py-1 text-xs font-semibold text-leaf">Cảm</span>
+                  
                 </p>
-              </div>
+              
             </a>
           </article>
         
@@ -351,11 +1009,11 @@
   
     <nav class="flex items-center justify-between gap-4" aria-label="Phân trang">
       
-        <a href="/page/25/" class="rounded-lg border border-line px-4 py-3 text-sm font-semibold text-ink no-underline hover:border-ink">Trang mới hơn</a>
+        <a href="/page/25/" class="rounded-full border border-line bg-card px-5 py-3 text-sm font-semibold text-ink no-underline transition hover:border-leaf hover:text-leaf">← Trang mới hơn</a>
       
       <span class="text-sm text-muted">Trang 26 / 28</span>
       
-        <a href="/page/27/" class="rounded-lg border border-line px-4 py-3 text-sm font-semibold text-ink no-underline hover:border-ink">Trang cũ hơn</a>
+        <a href="/page/27/" class="rounded-full border border-line bg-card px-5 py-3 text-sm font-semibold text-ink no-underline transition hover:border-leaf hover:text-leaf">Trang cũ hơn →</a>
       
     </nav>
   
@@ -363,10 +1021,49 @@
 
     </main>
 
-    <footer class="border-t border-line bg-mist">
-      <div class="mx-auto grid max-w-6xl gap-10 px-5 py-10 md:grid-cols-[1.2fr_1fr] md:px-8">
+    <footer class="relative overflow-hidden border-t border-line bg-moss/70">
+      <svg viewBox="0 0 200 140" fill="none" xmlns="http://www.w3.org/2000/svg" class="pointer-events-none absolute -right-6 -top-8 h-36 w-52 opacity-50 md:h-44 md:w-64" aria-hidden="true" focusable="false">
+  <path d="M10 130 C 54 108, 104 72, 182 16" stroke="#7c9b72" stroke-width="2.4" stroke-linecap="round" />
+  <g transform="translate(34 119) rotate(8)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#a9c398" opacity="0.9" /></g>
+  <g transform="translate(52 109) rotate(-84)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#bcd3a8" opacity="0.9" /></g>
+  <g transform="translate(76 94) rotate(4)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#8fb083" opacity="0.9" /></g>
+  <g transform="translate(96 81) rotate(-88)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#a9c398" opacity="0.9" /></g>
+  <g transform="translate(120 64) rotate(0)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#bcd3a8" opacity="0.9" /></g>
+  <g transform="translate(138 52) rotate(-92)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#8fb083" opacity="0.9" /></g>
+  <g transform="translate(158 37) rotate(-6)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#a9c398" opacity="0.9" /></g>
+  <g transform="translate(172 26) rotate(-96)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#cfe0bd" opacity="0.9" /></g>
+  <g transform="translate(182 16) rotate(-42)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#7fa574" opacity="0.95" /></g>
+  <circle cx="64" cy="100" r="3" fill="#6f9270" opacity="0.55" />
+  <circle cx="112" cy="71" r="2.5" fill="#6f9270" opacity="0.5" />
+  <circle cx="150" cy="43" r="2.8" fill="#6f9270" opacity="0.55" />
+</svg>
+
+      <svg viewBox="0 0 200 140" fill="none" xmlns="http://www.w3.org/2000/svg" class="pointer-events-none absolute -left-8 -top-6 hidden h-32 w-48 -scale-x-100 opacity-40 sm:block" aria-hidden="true" focusable="false">
+  <path d="M10 130 C 54 108, 104 72, 182 16" stroke="#7c9b72" stroke-width="2.4" stroke-linecap="round" />
+  <g transform="translate(34 119) rotate(8)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#a9c398" opacity="0.9" /></g>
+  <g transform="translate(52 109) rotate(-84)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#bcd3a8" opacity="0.9" /></g>
+  <g transform="translate(76 94) rotate(4)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#8fb083" opacity="0.9" /></g>
+  <g transform="translate(96 81) rotate(-88)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#a9c398" opacity="0.9" /></g>
+  <g transform="translate(120 64) rotate(0)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#bcd3a8" opacity="0.9" /></g>
+  <g transform="translate(138 52) rotate(-92)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#8fb083" opacity="0.9" /></g>
+  <g transform="translate(158 37) rotate(-6)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#a9c398" opacity="0.9" /></g>
+  <g transform="translate(172 26) rotate(-96)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#cfe0bd" opacity="0.9" /></g>
+  <g transform="translate(182 16) rotate(-42)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#7fa574" opacity="0.95" /></g>
+  <circle cx="64" cy="100" r="3" fill="#6f9270" opacity="0.55" />
+  <circle cx="112" cy="71" r="2.5" fill="#6f9270" opacity="0.5" />
+  <circle cx="150" cy="43" r="2.8" fill="#6f9270" opacity="0.55" />
+</svg>
+
+      <div class="relative mx-auto grid max-w-6xl gap-10 px-5 py-12 md:grid-cols-[1.2fr_1fr] md:px-8">
         <div>
-          <p class="text-sm font-semibold uppercase text-muted">Dương & Đào Family</p>
+          <p class="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wide text-leaf">
+            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" aria-hidden="true" focusable="false">
+  <path d="M3.5 16.5 C 3.5 9, 9 3.5, 16.5 3.5 C 16.5 11, 11 16.5, 3.5 16.5 Z" fill="currentColor" opacity="0.22" />
+  <path d="M3.5 16.5 C 3.5 9, 9 3.5, 16.5 3.5 M6.2 13.8 C 8.8 13.2 11.9 10.1 12.9 7.1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" />
+</svg>
+
+            Dương &amp; Đào Family
+          </p>
           <p class="mt-3 max-w-xl text-sm leading-7 text-muted">
             Những điều đang học, những nơi đã đi qua, và vài kỷ niệm muốn giữ lại cho nhau.
           </p>
@@ -375,35 +1072,35 @@
           </p>
           <div class="mt-5 flex flex-wrap gap-2">
             
-              <a href="/categories/Cuoc-song-o-Nhat/" class="rounded-lg border border-line bg-white px-3 py-2 text-xs font-semibold text-muted no-underline transition hover:border-ink hover:text-ink">
+              <a href="/categories/Cuoc-song-o-Nhat/" class="rounded-full border border-line bg-card px-4 py-2 text-xs font-semibold text-muted no-underline transition hover:border-leaf hover:text-leaf">
                 Cuộc sống ở Nhật
               </a>
             
-              <a href="/categories/Cam/" class="rounded-lg border border-line bg-white px-3 py-2 text-xs font-semibold text-muted no-underline transition hover:border-ink hover:text-ink">
+              <a href="/categories/Cam/" class="rounded-full border border-line bg-card px-4 py-2 text-xs font-semibold text-muted no-underline transition hover:border-leaf hover:text-leaf">
                 Cảm
               </a>
             
-              <a href="/categories/Ghi/" class="rounded-lg border border-line bg-white px-3 py-2 text-xs font-semibold text-muted no-underline transition hover:border-ink hover:text-ink">
+              <a href="/categories/Ghi/" class="rounded-full border border-line bg-card px-4 py-2 text-xs font-semibold text-muted no-underline transition hover:border-leaf hover:text-leaf">
                 Ghi
               </a>
             
-              <a href="/categories/Hoc/" class="rounded-lg border border-line bg-white px-3 py-2 text-xs font-semibold text-muted no-underline transition hover:border-ink hover:text-ink">
+              <a href="/categories/Hoc/" class="rounded-full border border-line bg-card px-4 py-2 text-xs font-semibold text-muted no-underline transition hover:border-leaf hover:text-leaf">
                 Học
               </a>
             
-              <a href="/categories/Kiwi-cinema/" class="rounded-lg border border-line bg-white px-3 py-2 text-xs font-semibold text-muted no-underline transition hover:border-ink hover:text-ink">
+              <a href="/categories/Kiwi-cinema/" class="rounded-full border border-line bg-card px-4 py-2 text-xs font-semibold text-muted no-underline transition hover:border-leaf hover:text-leaf">
                 Kiwi cinema
               </a>
             
-              <a href="/categories/Kiwi-s-Corner/" class="rounded-lg border border-line bg-white px-3 py-2 text-xs font-semibold text-muted no-underline transition hover:border-ink hover:text-ink">
+              <a href="/categories/Kiwi-s-Corner/" class="rounded-full border border-line bg-card px-4 py-2 text-xs font-semibold text-muted no-underline transition hover:border-leaf hover:text-leaf">
                 Kiwi&#39;s Corner
               </a>
             
-              <a href="/categories/Lam/" class="rounded-lg border border-line bg-white px-3 py-2 text-xs font-semibold text-muted no-underline transition hover:border-ink hover:text-ink">
+              <a href="/categories/Lam/" class="rounded-full border border-line bg-card px-4 py-2 text-xs font-semibold text-muted no-underline transition hover:border-leaf hover:text-leaf">
                 Làm
               </a>
             
-              <a href="/categories/Lam-cha-me/" class="rounded-lg border border-line bg-white px-3 py-2 text-xs font-semibold text-muted no-underline transition hover:border-ink hover:text-ink">
+              <a href="/categories/Lam-cha-me/" class="rounded-full border border-line bg-card px-4 py-2 text-xs font-semibold text-muted no-underline transition hover:border-leaf hover:text-leaf">
                 Làm cha mẹ
               </a>
             
@@ -411,35 +1108,141 @@
         </div>
 
         <div>
-          <p class="text-sm font-semibold uppercase text-muted">Mới nhất</p>
+          <p class="font-display text-sm font-semibold uppercase tracking-wide text-muted">Mới nhất</p>
           <div class="mt-4 divide-y divide-line">
             
-              <a href="https://duongdao.family/khi-nang-luc-cua-con-khong-nam-tren-san-khau/" class="block py-3 no-underline">
-                <span class="block text-sm font-semibold leading-6 text-ink">Khi năng lực của con không nằm trên sân khấu</span>
+              <a href="https://duongdao.family/khi-nang-luc-cua-con-khong-nam-tren-san-khau/" class="group block py-3 no-underline">
+                <span class="block text-sm font-semibold leading-6 text-ink transition group-hover:text-leaf">Khi năng lực của con không nằm trên sân khấu</span>
                 <span class="text-xs text-muted">25/06/2026</span>
               </a>
             
-              <a href="https://duongdao.family/gia-tri-cua-mot-nang-luc-khong-sinh-loi/" class="block py-3 no-underline">
-                <span class="block text-sm font-semibold leading-6 text-ink">Giá trị của một “năng lực không sinh lời”</span>
+              <a href="https://duongdao.family/gia-tri-cua-mot-nang-luc-khong-sinh-loi/" class="group block py-3 no-underline">
+                <span class="block text-sm font-semibold leading-6 text-ink transition group-hover:text-leaf">Giá trị của một “năng lực không sinh lời”</span>
                 <span class="text-xs text-muted">22/05/2026</span>
               </a>
             
-              <a href="https://duongdao.family/ban-co-tai-nang-khong/" class="block py-3 no-underline">
-                <span class="block text-sm font-semibold leading-6 text-ink">Bạn có tài năng không? Có lẽ đó không phải câu hỏi quan trọng nhất</span>
+              <a href="https://duongdao.family/ban-co-tai-nang-khong/" class="group block py-3 no-underline">
+                <span class="block text-sm font-semibold leading-6 text-ink transition group-hover:text-leaf">Bạn có tài năng không? Có lẽ đó không phải câu hỏi quan trọng nhất</span>
                 <span class="text-xs text-muted">19/05/2026</span>
               </a>
             
-              <a href="https://duongdao.family/hoc-gi-quan-trong-nhat-thoi-dai-ai/" class="block py-3 no-underline">
-                <span class="block text-sm font-semibold leading-6 text-ink">Học gì quan trọng nhất thời đại AI?</span>
+              <a href="https://duongdao.family/hoc-gi-quan-trong-nhat-thoi-dai-ai/" class="group block py-3 no-underline">
+                <span class="block text-sm font-semibold leading-6 text-ink transition group-hover:text-leaf">Học gì quan trọng nhất thời đại AI?</span>
                 <span class="text-xs text-muted">05/05/2026</span>
               </a>
             
           </div>
         </div>
         <p class="md:col-span-2 text-xs leading-6 text-muted">
-          Kiwi icon by
-          <a class="font-semibold text-muted underline underline-offset-2" href="https://www.flaticon.com/free-icon/kiwi_6498542" target="_blank" rel="noopener">Marz Gallery - Flaticon</a>.
+          UI Designed by Fable 5
         </p>
+      </div>
+
+      <div class="pointer-events-none relative mx-auto -mt-6 flex max-w-6xl items-end justify-between px-5 md:px-8" aria-hidden="true">
+        <svg viewBox="0 0 160 180" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-16 w-14 opacity-75" aria-hidden="true" focusable="false">
+  <ellipse cx="80" cy="176" rx="34" ry="4" fill="#6f9270" opacity="0.18" />
+  <path d="M80 178 C 82 150, 78 124, 74 100" stroke="#8d795f" stroke-width="7" stroke-linecap="round" />
+  <path d="M75 104 C 66 92, 58 84, 46 76" stroke="#8d795f" stroke-width="4" stroke-linecap="round" />
+  <path d="M76 112 C 90 102, 100 94, 110 84" stroke="#8d795f" stroke-width="4" stroke-linecap="round" />
+  <path d="M74 100 C 80 88, 88 78, 96 70" stroke="#8d795f" stroke-width="3.5" stroke-linecap="round" />
+  <circle cx="50" cy="64" r="28" fill="#9dbb8f" opacity="0.85" />
+  <circle cx="84" cy="42" r="32" fill="#8fb083" opacity="0.85" />
+  <circle cx="116" cy="64" r="26" fill="#bcd3a8" opacity="0.9" />
+  <circle cx="68" cy="52" r="24" fill="#a9c398" opacity="0.8" />
+  <circle cx="98" cy="68" r="24" fill="#cfe0bd" opacity="0.75" />
+  <circle cx="60" cy="58" r="2.5" fill="#5e7d5a" opacity="0.6" />
+  <circle cx="92" cy="50" r="2.5" fill="#5e7d5a" opacity="0.6" />
+  <circle cx="112" cy="70" r="2.5" fill="#5e7d5a" opacity="0.6" />
+  <g transform="translate(128 108) rotate(35) scale(0.45)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#a9c398" opacity="0.7" /></g>
+  <g transform="translate(36 122) rotate(-24) scale(0.4)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#9dbb8f" opacity="0.7" /></g>
+</svg>
+
+        <svg viewBox="0 0 200 140" fill="none" xmlns="http://www.w3.org/2000/svg" class="hidden h-10 w-16 opacity-60 sm:block" aria-hidden="true" focusable="false">
+  <path d="M10 130 C 54 108, 104 72, 182 16" stroke="#7c9b72" stroke-width="2.4" stroke-linecap="round" />
+  <g transform="translate(34 119) rotate(8)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#a9c398" opacity="0.9" /></g>
+  <g transform="translate(52 109) rotate(-84)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#bcd3a8" opacity="0.9" /></g>
+  <g transform="translate(76 94) rotate(4)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#8fb083" opacity="0.9" /></g>
+  <g transform="translate(96 81) rotate(-88)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#a9c398" opacity="0.9" /></g>
+  <g transform="translate(120 64) rotate(0)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#bcd3a8" opacity="0.9" /></g>
+  <g transform="translate(138 52) rotate(-92)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#8fb083" opacity="0.9" /></g>
+  <g transform="translate(158 37) rotate(-6)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#a9c398" opacity="0.9" /></g>
+  <g transform="translate(172 26) rotate(-96)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#cfe0bd" opacity="0.9" /></g>
+  <g transform="translate(182 16) rotate(-42)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#7fa574" opacity="0.95" /></g>
+  <circle cx="64" cy="100" r="3" fill="#6f9270" opacity="0.55" />
+  <circle cx="112" cy="71" r="2.5" fill="#6f9270" opacity="0.5" />
+  <circle cx="150" cy="43" r="2.8" fill="#6f9270" opacity="0.55" />
+</svg>
+
+        <svg viewBox="0 0 160 180" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-24 w-20 opacity-90" aria-hidden="true" focusable="false">
+  <ellipse cx="80" cy="176" rx="34" ry="4" fill="#6f9270" opacity="0.18" />
+  <path d="M80 178 C 82 150, 78 124, 74 100" stroke="#8d795f" stroke-width="7" stroke-linecap="round" />
+  <path d="M75 104 C 66 92, 58 84, 46 76" stroke="#8d795f" stroke-width="4" stroke-linecap="round" />
+  <path d="M76 112 C 90 102, 100 94, 110 84" stroke="#8d795f" stroke-width="4" stroke-linecap="round" />
+  <path d="M74 100 C 80 88, 88 78, 96 70" stroke="#8d795f" stroke-width="3.5" stroke-linecap="round" />
+  <circle cx="50" cy="64" r="28" fill="#9dbb8f" opacity="0.85" />
+  <circle cx="84" cy="42" r="32" fill="#8fb083" opacity="0.85" />
+  <circle cx="116" cy="64" r="26" fill="#bcd3a8" opacity="0.9" />
+  <circle cx="68" cy="52" r="24" fill="#a9c398" opacity="0.8" />
+  <circle cx="98" cy="68" r="24" fill="#cfe0bd" opacity="0.75" />
+  <circle cx="60" cy="58" r="2.5" fill="#5e7d5a" opacity="0.6" />
+  <circle cx="92" cy="50" r="2.5" fill="#5e7d5a" opacity="0.6" />
+  <circle cx="112" cy="70" r="2.5" fill="#5e7d5a" opacity="0.6" />
+  <g transform="translate(128 108) rotate(35) scale(0.45)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#a9c398" opacity="0.7" /></g>
+  <g transform="translate(36 122) rotate(-24) scale(0.4)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#9dbb8f" opacity="0.7" /></g>
+</svg>
+
+        <svg viewBox="0 0 200 140" fill="none" xmlns="http://www.w3.org/2000/svg" class="hidden h-12 w-20 -scale-x-100 opacity-60 md:block" aria-hidden="true" focusable="false">
+  <path d="M10 130 C 54 108, 104 72, 182 16" stroke="#7c9b72" stroke-width="2.4" stroke-linecap="round" />
+  <g transform="translate(34 119) rotate(8)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#a9c398" opacity="0.9" /></g>
+  <g transform="translate(52 109) rotate(-84)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#bcd3a8" opacity="0.9" /></g>
+  <g transform="translate(76 94) rotate(4)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#8fb083" opacity="0.9" /></g>
+  <g transform="translate(96 81) rotate(-88)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#a9c398" opacity="0.9" /></g>
+  <g transform="translate(120 64) rotate(0)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#bcd3a8" opacity="0.9" /></g>
+  <g transform="translate(138 52) rotate(-92)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#8fb083" opacity="0.9" /></g>
+  <g transform="translate(158 37) rotate(-6)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#a9c398" opacity="0.9" /></g>
+  <g transform="translate(172 26) rotate(-96)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#cfe0bd" opacity="0.9" /></g>
+  <g transform="translate(182 16) rotate(-42)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#7fa574" opacity="0.95" /></g>
+  <circle cx="64" cy="100" r="3" fill="#6f9270" opacity="0.55" />
+  <circle cx="112" cy="71" r="2.5" fill="#6f9270" opacity="0.5" />
+  <circle cx="150" cy="43" r="2.8" fill="#6f9270" opacity="0.55" />
+</svg>
+
+        <svg viewBox="0 0 160 180" fill="none" xmlns="http://www.w3.org/2000/svg" class="hidden h-14 w-12 opacity-75 sm:block" aria-hidden="true" focusable="false">
+  <ellipse cx="80" cy="176" rx="34" ry="4" fill="#6f9270" opacity="0.18" />
+  <path d="M80 178 C 82 150, 78 124, 74 100" stroke="#8d795f" stroke-width="7" stroke-linecap="round" />
+  <path d="M75 104 C 66 92, 58 84, 46 76" stroke="#8d795f" stroke-width="4" stroke-linecap="round" />
+  <path d="M76 112 C 90 102, 100 94, 110 84" stroke="#8d795f" stroke-width="4" stroke-linecap="round" />
+  <path d="M74 100 C 80 88, 88 78, 96 70" stroke="#8d795f" stroke-width="3.5" stroke-linecap="round" />
+  <circle cx="50" cy="64" r="28" fill="#9dbb8f" opacity="0.85" />
+  <circle cx="84" cy="42" r="32" fill="#8fb083" opacity="0.85" />
+  <circle cx="116" cy="64" r="26" fill="#bcd3a8" opacity="0.9" />
+  <circle cx="68" cy="52" r="24" fill="#a9c398" opacity="0.8" />
+  <circle cx="98" cy="68" r="24" fill="#cfe0bd" opacity="0.75" />
+  <circle cx="60" cy="58" r="2.5" fill="#5e7d5a" opacity="0.6" />
+  <circle cx="92" cy="50" r="2.5" fill="#5e7d5a" opacity="0.6" />
+  <circle cx="112" cy="70" r="2.5" fill="#5e7d5a" opacity="0.6" />
+  <g transform="translate(128 108) rotate(35) scale(0.45)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#a9c398" opacity="0.7" /></g>
+  <g transform="translate(36 122) rotate(-24) scale(0.4)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#9dbb8f" opacity="0.7" /></g>
+</svg>
+
+        <svg viewBox="0 0 160 180" fill="none" xmlns="http://www.w3.org/2000/svg" class="hidden h-20 w-16 opacity-85 lg:block" aria-hidden="true" focusable="false">
+  <ellipse cx="80" cy="176" rx="34" ry="4" fill="#6f9270" opacity="0.18" />
+  <path d="M80 178 C 82 150, 78 124, 74 100" stroke="#8d795f" stroke-width="7" stroke-linecap="round" />
+  <path d="M75 104 C 66 92, 58 84, 46 76" stroke="#8d795f" stroke-width="4" stroke-linecap="round" />
+  <path d="M76 112 C 90 102, 100 94, 110 84" stroke="#8d795f" stroke-width="4" stroke-linecap="round" />
+  <path d="M74 100 C 80 88, 88 78, 96 70" stroke="#8d795f" stroke-width="3.5" stroke-linecap="round" />
+  <circle cx="50" cy="64" r="28" fill="#9dbb8f" opacity="0.85" />
+  <circle cx="84" cy="42" r="32" fill="#8fb083" opacity="0.85" />
+  <circle cx="116" cy="64" r="26" fill="#bcd3a8" opacity="0.9" />
+  <circle cx="68" cy="52" r="24" fill="#a9c398" opacity="0.8" />
+  <circle cx="98" cy="68" r="24" fill="#cfe0bd" opacity="0.75" />
+  <circle cx="60" cy="58" r="2.5" fill="#5e7d5a" opacity="0.6" />
+  <circle cx="92" cy="50" r="2.5" fill="#5e7d5a" opacity="0.6" />
+  <circle cx="112" cy="70" r="2.5" fill="#5e7d5a" opacity="0.6" />
+  <g transform="translate(128 108) rotate(35) scale(0.45)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#a9c398" opacity="0.7" /></g>
+  <g transform="translate(36 122) rotate(-24) scale(0.4)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#9dbb8f" opacity="0.7" /></g>
+</svg>
+
       </div>
     </footer>
 

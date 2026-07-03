@@ -24,21 +24,26 @@
         theme: {
           extend: {
             colors: {
-              paper: "#ffffff",
-              mist: "#f7f7f7",
-              ink: "#171717",
-              muted: "#666666",
-              line: "#e5e5e5",
-              leaf: "#16835f",
-              berry: "#b33d5a",
+              paper: "#f5f8f1",
+              card: "#ffffff",
+              ink: "#2b3a2a",
+              muted: "#64735f",
+              line: "#dde7d4",
+              leaf: "#35714a",
+              pine: "#29583b",
+              moss: "#e9f1e0",
+              cream: "#f8f4e7",
+              berry: "#b04a4a",
               amber: "#b7791f"
             },
             fontFamily: {
               sans: ["Be Vietnam Pro", "Inter", "ui-sans-serif", "system-ui", "sans-serif"],
+              display: ["Lora", "Georgia", "serif"],
               mono: ["JetBrains Mono", "ui-monospace", "SFMono-Regular", "monospace"]
             },
             boxShadow: {
-              lift: "0 16px 48px rgba(23, 23, 23, 0.08)"
+              lift: "0 16px 44px rgba(53, 113, 74, 0.10)",
+              leafy: "0 8px 26px rgba(53, 113, 74, 0.12)"
             }
           }
         }
@@ -47,6 +52,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&subset=vietnamese&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,500;1,600&subset=vietnamese&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
     
 <link rel="stylesheet" href="/css/style.css">
@@ -54,16 +60,52 @@
     <link rel="shortcut icon" href="/images/favicon.png">
   <meta name="generator" content="Hexo 7.3.0"></head>
   <body class="min-h-screen bg-paper text-ink antialiased" data-analytics-api="/api/analytics" data-analytics-path="/categories/Tieng-Nhat/page/2/" data-analytics-title="Blog Dương &amp; Đào Family" data-analytics-page-type="page" data-comments-api="/api/comments">
-    <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-lg focus:bg-ink focus:px-4 focus:py-3 focus:text-sm focus:font-semibold focus:text-white">
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-full focus:bg-leaf focus:px-4 focus:py-3 focus:text-sm focus:font-semibold focus:text-white">
       Chuyển đến nội dung
     </a>
 
-    <header class="sticky top-0 z-40 border-b border-line bg-white/95 backdrop-blur">
-      <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-4 md:px-8">
+    <header class="sticky top-0 z-40 border-b border-line bg-paper/90 backdrop-blur">
+      <div class="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden="true">
+        <svg viewBox="0 0 200 140" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute -right-4 -top-6 h-20 w-32 rotate-180 opacity-45" aria-hidden="true" focusable="false">
+  <path d="M10 130 C 54 108, 104 72, 182 16" stroke="#7c9b72" stroke-width="2.4" stroke-linecap="round" />
+  <g transform="translate(34 119) rotate(8)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#a9c398" opacity="0.9" /></g>
+  <g transform="translate(52 109) rotate(-84)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#bcd3a8" opacity="0.9" /></g>
+  <g transform="translate(76 94) rotate(4)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#8fb083" opacity="0.9" /></g>
+  <g transform="translate(96 81) rotate(-88)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#a9c398" opacity="0.9" /></g>
+  <g transform="translate(120 64) rotate(0)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#bcd3a8" opacity="0.9" /></g>
+  <g transform="translate(138 52) rotate(-92)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#8fb083" opacity="0.9" /></g>
+  <g transform="translate(158 37) rotate(-6)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#a9c398" opacity="0.9" /></g>
+  <g transform="translate(172 26) rotate(-96)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#cfe0bd" opacity="0.9" /></g>
+  <g transform="translate(182 16) rotate(-42)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#7fa574" opacity="0.95" /></g>
+  <circle cx="64" cy="100" r="3" fill="#6f9270" opacity="0.55" />
+  <circle cx="112" cy="71" r="2.5" fill="#6f9270" opacity="0.5" />
+  <circle cx="150" cy="43" r="2.8" fill="#6f9270" opacity="0.55" />
+</svg>
+
+        <svg viewBox="0 0 200 140" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute left-[38%] -top-8 hidden h-16 w-28 rotate-180 opacity-30 lg:block" aria-hidden="true" focusable="false">
+  <path d="M10 130 C 54 108, 104 72, 182 16" stroke="#7c9b72" stroke-width="2.4" stroke-linecap="round" />
+  <g transform="translate(34 119) rotate(8)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#a9c398" opacity="0.9" /></g>
+  <g transform="translate(52 109) rotate(-84)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#bcd3a8" opacity="0.9" /></g>
+  <g transform="translate(76 94) rotate(4)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#8fb083" opacity="0.9" /></g>
+  <g transform="translate(96 81) rotate(-88)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#a9c398" opacity="0.9" /></g>
+  <g transform="translate(120 64) rotate(0)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#bcd3a8" opacity="0.9" /></g>
+  <g transform="translate(138 52) rotate(-92)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#8fb083" opacity="0.9" /></g>
+  <g transform="translate(158 37) rotate(-6)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#a9c398" opacity="0.9" /></g>
+  <g transform="translate(172 26) rotate(-96)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#cfe0bd" opacity="0.9" /></g>
+  <g transform="translate(182 16) rotate(-42)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#7fa574" opacity="0.95" /></g>
+  <circle cx="64" cy="100" r="3" fill="#6f9270" opacity="0.55" />
+  <circle cx="112" cy="71" r="2.5" fill="#6f9270" opacity="0.5" />
+  <circle cx="150" cy="43" r="2.8" fill="#6f9270" opacity="0.55" />
+</svg>
+
+      </div>
+      <div class="relative mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-3.5 md:px-8">
         <a href="/" class="group inline-flex items-center gap-3 text-ink no-underline">
-          <img src="/images/kiwi-flaticon.png" alt="Blog Dương Đào Family" class="h-11 w-11 rounded-lg object-contain" />
+          <span class="inline-flex h-11 w-11 items-center justify-center rounded-full bg-moss ring-1 ring-line">
+            <img src="/images/kiwi-flaticon.png" alt="Blog Dương Đào Family" class="h-8 w-8 object-contain" />
+          </span>
           <span class="flex flex-col">
-            <span class="text-sm font800 leading-5 md:text-base">Dương & Đào Family</span>
+            <span class="font-display text-base font-semibold leading-5 md:text-lg">Dương &amp; Đào Family</span>
             <span class="hidden text-xs text-muted md:block">Nhật ký gia đình, học hỏi và những chuyến đi</span>
           </span>
         </a>
@@ -74,12 +116,12 @@
           <a class="nav-link" href="/archives">Lưu trữ</a>
         </nav>
 
-        <button type="button" class="inline-flex h-11 items-center justify-center rounded-lg border border-line px-4 text-sm font-semibold text-ink md:hidden" data-menu-toggle aria-expanded="false" aria-controls="mobile-menu">
+        <button type="button" class="inline-flex h-11 items-center justify-center rounded-full border border-line bg-card px-4 text-sm font-semibold text-ink md:hidden" data-menu-toggle aria-expanded="false" aria-controls="mobile-menu">
           Menu
         </button>
       </div>
 
-      <div id="mobile-menu" class="hidden border-t border-line bg-white md:hidden">
+      <div id="mobile-menu" class="hidden border-t border-line bg-paper md:hidden">
         <nav class="mx-auto flex max-w-6xl flex-col px-5 py-4" aria-label="Điều hướng di động">
           <a class="mobile-link" href="/">Trang chủ</a>
           <a class="mobile-link" href="/categories">Chuyên mục</a>
@@ -92,141 +134,178 @@
       
 
 <section class="grid gap-10">
-  <header class="max-w-3xl border-b border-line pb-8">
-    <p class="text-sm font-semibold uppercase text-leaf">Chuyên mục</p>
-    <h1 class="mt-4 text-4xl font800 leading-tight text-ink md:text-5xl">Tiếng Nhật</h1>
+  <header class="max-w-3xl">
+    <p class="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wide text-leaf">
+      <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" aria-hidden="true" focusable="false">
+  <path d="M3.5 16.5 C 3.5 9, 9 3.5, 16.5 3.5 C 16.5 11, 11 16.5, 3.5 16.5 Z" fill="currentColor" opacity="0.22" />
+  <path d="M3.5 16.5 C 3.5 9, 9 3.5, 16.5 3.5 M6.2 13.8 C 8.8 13.2 11.9 10.1 12.9 7.1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" />
+</svg>
+
+      Chuyên mục
+    </p>
+    <h1 class="mt-4 font-display text-4xl font-semibold leading-tight text-ink md:text-5xl">Tiếng Nhật</h1>
     <p class="mt-5 text-base leading-8 text-muted">10 bài viết trong chuyên mục này.</p>
   </header>
 
-  <div class="divide-y divide-line border-y border-line">
+  <div class="grid gap-4">
     
-      <article>
-        <a href="https://duongdao.family/ngu-phap-cho-nhan-trong-tieng-nhat-n5/" class="group grid gap-3 py-6 no-underline md:grid-cols-[140px_minmax(0,1fr)]">
-          <time class="text-sm text-muted" datetime="2024-09-27">27/09/2024</time>
-          <div>
-            <h2 class="text-xl font700 leading-8 text-ink group-hover:text-leaf">Ngữ pháp Cho・Nhận trong tiếng Nhật (N5)</h2>
-            <p class="mt-2 text-sm leading-7 text-muted">Ngữ pháp Cho・Nhận là một ngữ pháp quan trọng nhưng lại dễ nhầm lẫn trong tiếng Nhật. Hãy cùng ôn lại với nhau nhé: あげます Ý nghĩa : “Tôi tặng&amp;#x2F;cho ai đó cái gì đó”. Cách dùng : Dùng khi người nói hoặc người khác tặng c...</p>
+      <article class="group rounded-[20px] border border-line bg-card shadow-sm transition hover:-translate-y-0.5 hover:border-leaf/40 hover:shadow-leafy">
+        <a href="https://duongdao.family/ngu-phap-cho-nhan-trong-tieng-nhat-n5/" class="grid gap-2 p-6 no-underline">
+          <p class="flex flex-wrap items-center gap-x-2 text-xs text-muted">
+            <time datetime="2024-09-27">27/09/2024</time>
+            <span aria-hidden="true">·</span>
+            <span>3 phút đọc</span>
             
-              <p class="mt-3 text-xs font-semibold uppercase text-muted">Ông Già Coder EB</p>
+              <span aria-hidden="true">·</span>
+              <span>Ông Già Coder EB</span>
             
-          </div>
+          </p>
+          <h2 class="font-display text-xl font-semibold leading-8 text-ink transition group-hover:text-leaf">Ngữ pháp Cho・Nhận trong tiếng Nhật (N5)</h2>
+          <p class="text-sm leading-7 text-muted">Ngữ pháp Cho・Nhận là một ngữ pháp quan trọng nhưng lại dễ nhầm lẫn trong tiếng Nhật. Hãy cùng ôn lại với nhau nhé: あげます Ý nghĩa : “Tôi tặng&amp;#x2F;cho ai đó cái gì đó”. Cách dùng : Dùng khi người nói hoặc người khác tặng c...</p>
         </a>
       </article>
     
-      <article>
-        <a href="https://duongdao.family/danh-sach-dong-tu-thuong-gap-n5/" class="group grid gap-3 py-6 no-underline md:grid-cols-[140px_minmax(0,1fr)]">
-          <time class="text-sm text-muted" datetime="2024-09-12">12/09/2024</time>
-          <div>
-            <h2 class="text-xl font700 leading-8 text-ink group-hover:text-leaf">Danh sách Động từ thường gặp (N5)</h2>
-            <p class="mt-2 text-sm leading-7 text-muted">Động từ V1 Thể từ điển Ý nghĩa Thể ます Thể て Thể た Thể ない 会う「あう」 会います 会って 会った 会わない 開く 開きます 開いて 開いた 開かない 遊ぶ「あそぶ」 遊びます 遊んで 遊んだ 遊ばない ある あります あって あった ない 歩く「あるく」 歩きます 歩いて 歩いた 歩かない 言う 言います 言って 言った 言わない 行く 行きます 行って 行った 行かない 急ぐ「い...</p>
+      <article class="group rounded-[20px] border border-line bg-card shadow-sm transition hover:-translate-y-0.5 hover:border-leaf/40 hover:shadow-leafy">
+        <a href="https://duongdao.family/danh-sach-dong-tu-thuong-gap-n5/" class="grid gap-2 p-6 no-underline">
+          <p class="flex flex-wrap items-center gap-x-2 text-xs text-muted">
+            <time datetime="2024-09-12">12/09/2024</time>
+            <span aria-hidden="true">·</span>
+            <span>5 phút đọc</span>
             
-              <p class="mt-3 text-xs font-semibold uppercase text-muted">Ông Già Coder EB</p>
+              <span aria-hidden="true">·</span>
+              <span>Ông Già Coder EB</span>
             
-          </div>
+          </p>
+          <h2 class="font-display text-xl font-semibold leading-8 text-ink transition group-hover:text-leaf">Danh sách Động từ thường gặp (N5)</h2>
+          <p class="text-sm leading-7 text-muted">Động từ V1 Thể từ điển Ý nghĩa Thể ます Thể て Thể た Thể ない 会う「あう」 会います 会って 会った 会わない 開く 開きます 開いて 開いた 開かない 遊ぶ「あそぶ」 遊びます 遊んで 遊んだ 遊ばない ある あります あって あった ない 歩く「あるく」 歩きます 歩いて 歩いた 歩かない 言う 言います 言って 言った 言わない 行く 行きます 行って 行った 行かない 急ぐ「い...</p>
         </a>
       </article>
     
-      <article>
-        <a href="https://duongdao.family/cap-tro-tu-ni-de/" class="group grid gap-3 py-6 no-underline md:grid-cols-[140px_minmax(0,1fr)]">
-          <time class="text-sm text-muted" datetime="2024-08-31">31/08/2024</time>
-          <div>
-            <h2 class="text-xl font700 leading-8 text-ink group-hover:text-leaf">Cặp trợ từ に・で</h2>
-            <p class="mt-2 text-sm leading-7 text-muted">Tiếp theo loạt bài về trợ từ trong tiếng Nhật: Sự quan trọng của Trợ từ trong tiếng Nhật | Blog Dương &amp;amp; Đào Family (duongdao.family) Cặp trợ từ は・が | Blog Dương &amp;amp; Đào Family (duongdao.family) Cặp Trợ từ が・を | Blo...</p>
+      <article class="group rounded-[20px] border border-line bg-card shadow-sm transition hover:-translate-y-0.5 hover:border-leaf/40 hover:shadow-leafy">
+        <a href="https://duongdao.family/cap-tro-tu-ni-de/" class="grid gap-2 p-6 no-underline">
+          <p class="flex flex-wrap items-center gap-x-2 text-xs text-muted">
+            <time datetime="2024-08-31">31/08/2024</time>
+            <span aria-hidden="true">·</span>
+            <span>3 phút đọc</span>
             
-              <p class="mt-3 text-xs font-semibold uppercase text-muted">Ông Già Coder EB</p>
+              <span aria-hidden="true">·</span>
+              <span>Ông Già Coder EB</span>
             
-          </div>
+          </p>
+          <h2 class="font-display text-xl font-semibold leading-8 text-ink transition group-hover:text-leaf">Cặp trợ từ に・で</h2>
+          <p class="text-sm leading-7 text-muted">Tiếp theo loạt bài về trợ từ trong tiếng Nhật: Sự quan trọng của Trợ từ trong tiếng Nhật | Blog Dương &amp;amp; Đào Family (duongdao.family) Cặp trợ từ は・が | Blog Dương &amp;amp; Đào Family (duongdao.family) Cặp Trợ từ が・を | Blo...</p>
         </a>
       </article>
     
-      <article>
-        <a href="https://duongdao.family/cap-tro-tu-ga-wo/" class="group grid gap-3 py-6 no-underline md:grid-cols-[140px_minmax(0,1fr)]">
-          <time class="text-sm text-muted" datetime="2024-08-26">26/08/2024</time>
-          <div>
-            <h2 class="text-xl font700 leading-8 text-ink group-hover:text-leaf">Cặp Trợ từ が・を</h2>
-            <p class="mt-2 text-sm leading-7 text-muted">Tiếp theo loạt bài về trợ từ trong tiếng Nhật: Sự quan trọng của Trợ từ trong tiếng Nhật | Blog Dương &amp;amp; Đào Family (duongdao.family) Cặp trợ từ は・が | Blog Dương &amp;amp; Đào Family (duongdao.family) Trong bài viết này,...</p>
+      <article class="group rounded-[20px] border border-line bg-card shadow-sm transition hover:-translate-y-0.5 hover:border-leaf/40 hover:shadow-leafy">
+        <a href="https://duongdao.family/cap-tro-tu-ga-wo/" class="grid gap-2 p-6 no-underline">
+          <p class="flex flex-wrap items-center gap-x-2 text-xs text-muted">
+            <time datetime="2024-08-26">26/08/2024</time>
+            <span aria-hidden="true">·</span>
+            <span>3 phút đọc</span>
             
-              <p class="mt-3 text-xs font-semibold uppercase text-muted">Ông Già Coder EB</p>
+              <span aria-hidden="true">·</span>
+              <span>Ông Già Coder EB</span>
             
-          </div>
+          </p>
+          <h2 class="font-display text-xl font-semibold leading-8 text-ink transition group-hover:text-leaf">Cặp Trợ từ が・を</h2>
+          <p class="text-sm leading-7 text-muted">Tiếp theo loạt bài về trợ từ trong tiếng Nhật: Sự quan trọng của Trợ từ trong tiếng Nhật | Blog Dương &amp;amp; Đào Family (duongdao.family) Cặp trợ từ は・が | Blog Dương &amp;amp; Đào Family (duongdao.family) Trong bài viết này,...</p>
         </a>
       </article>
     
-      <article>
-        <a href="https://duongdao.family/tu-dong-tu-va-tha-dong-tu-trong-tieng-nhat/" class="group grid gap-3 py-6 no-underline md:grid-cols-[140px_minmax(0,1fr)]">
-          <time class="text-sm text-muted" datetime="2024-08-25">25/08/2024</time>
-          <div>
-            <h2 class="text-xl font700 leading-8 text-ink group-hover:text-leaf">Tự động từ và tha động từ trong tiếng Nhật</h2>
-            <p class="mt-2 text-sm leading-7 text-muted">自動詞「じどうし」- Tự động từ Định nghĩa : Là động từ diễn tả hành động xảy ra mà không có đối tượng tác động trực tiếp. Hành động tự nó diễn ra, và chủ thể của hành động không tác động lên cái gì khác. Trợ từ thường đi kèm : が,...</p>
+      <article class="group rounded-[20px] border border-line bg-card shadow-sm transition hover:-translate-y-0.5 hover:border-leaf/40 hover:shadow-leafy">
+        <a href="https://duongdao.family/tu-dong-tu-va-tha-dong-tu-trong-tieng-nhat/" class="grid gap-2 p-6 no-underline">
+          <p class="flex flex-wrap items-center gap-x-2 text-xs text-muted">
+            <time datetime="2024-08-25">25/08/2024</time>
+            <span aria-hidden="true">·</span>
+            <span>1 phút đọc</span>
             
-              <p class="mt-3 text-xs font-semibold uppercase text-muted">Ông Già Coder EB</p>
+              <span aria-hidden="true">·</span>
+              <span>Ông Già Coder EB</span>
             
-          </div>
+          </p>
+          <h2 class="font-display text-xl font-semibold leading-8 text-ink transition group-hover:text-leaf">Tự động từ và tha động từ trong tiếng Nhật</h2>
+          <p class="text-sm leading-7 text-muted">自動詞「じどうし」- Tự động từ Định nghĩa : Là động từ diễn tả hành động xảy ra mà không có đối tượng tác động trực tiếp. Hành động tự nó diễn ra, và chủ thể của hành động không tác động lên cái gì khác. Trợ từ thường đi kèm : が,...</p>
         </a>
       </article>
     
-      <article>
-        <a href="https://duongdao.family/cap-tro-tu-wa-ga/" class="group grid gap-3 py-6 no-underline md:grid-cols-[140px_minmax(0,1fr)]">
-          <time class="text-sm text-muted" datetime="2024-08-23">23/08/2024</time>
-          <div>
-            <h2 class="text-xl font700 leading-8 text-ink group-hover:text-leaf">Cặp trợ từ は・が</h2>
-            <p class="mt-2 text-sm leading-7 text-muted">Tiếp theo bài trước: Sự quan trọng của Trợ từ trong tiếng Nhật | Blog Dương &amp;amp; Đào Family (duongdao.family) Trong bài viết này, chúng ta sẽ tìm hiểu về cặp trợ từ khá phổ biến, nhưng lại rất dễ nhầm lẫn với nhau. Đó l...</p>
+      <article class="group rounded-[20px] border border-line bg-card shadow-sm transition hover:-translate-y-0.5 hover:border-leaf/40 hover:shadow-leafy">
+        <a href="https://duongdao.family/cap-tro-tu-wa-ga/" class="grid gap-2 p-6 no-underline">
+          <p class="flex flex-wrap items-center gap-x-2 text-xs text-muted">
+            <time datetime="2024-08-23">23/08/2024</time>
+            <span aria-hidden="true">·</span>
+            <span>2 phút đọc</span>
             
-              <p class="mt-3 text-xs font-semibold uppercase text-muted">Ông Già Coder EB</p>
+              <span aria-hidden="true">·</span>
+              <span>Ông Già Coder EB</span>
             
-          </div>
+          </p>
+          <h2 class="font-display text-xl font-semibold leading-8 text-ink transition group-hover:text-leaf">Cặp trợ từ は・が</h2>
+          <p class="text-sm leading-7 text-muted">Tiếp theo bài trước: Sự quan trọng của Trợ từ trong tiếng Nhật | Blog Dương &amp;amp; Đào Family (duongdao.family) Trong bài viết này, chúng ta sẽ tìm hiểu về cặp trợ từ khá phổ biến, nhưng lại rất dễ nhầm lẫn với nhau. Đó l...</p>
         </a>
       </article>
     
-      <article>
-        <a href="https://duongdao.family/su-quan-trong-cua-tro-tu-trong-tieng-nhat/" class="group grid gap-3 py-6 no-underline md:grid-cols-[140px_minmax(0,1fr)]">
-          <time class="text-sm text-muted" datetime="2024-08-23">23/08/2024</time>
-          <div>
-            <h2 class="text-xl font700 leading-8 text-ink group-hover:text-leaf">Sự quan trọng của Trợ từ trong tiếng Nhật</h2>
-            <p class="mt-2 text-sm leading-7 text-muted">Sự quan trọng của Trợ từ trong tiếng Nhật Trợ từ (助詞・じょし) là một trong những yếu tố cơ bản và quan trọng trong tiếng Nhật. Trợ từ không chỉ giúp bổ sung ý nghĩa cho từ mà nó đi kèm, mà còn thiết lập mối quan hệ giữa các...</p>
+      <article class="group rounded-[20px] border border-line bg-card shadow-sm transition hover:-translate-y-0.5 hover:border-leaf/40 hover:shadow-leafy">
+        <a href="https://duongdao.family/su-quan-trong-cua-tro-tu-trong-tieng-nhat/" class="grid gap-2 p-6 no-underline">
+          <p class="flex flex-wrap items-center gap-x-2 text-xs text-muted">
+            <time datetime="2024-08-23">23/08/2024</time>
+            <span aria-hidden="true">·</span>
+            <span>4 phút đọc</span>
             
-              <p class="mt-3 text-xs font-semibold uppercase text-muted">Ông Già Coder EB</p>
+              <span aria-hidden="true">·</span>
+              <span>Ông Già Coder EB</span>
             
-          </div>
+          </p>
+          <h2 class="font-display text-xl font-semibold leading-8 text-ink transition group-hover:text-leaf">Sự quan trọng của Trợ từ trong tiếng Nhật</h2>
+          <p class="text-sm leading-7 text-muted">Sự quan trọng của Trợ từ trong tiếng Nhật Trợ từ (助詞・じょし) là một trong những yếu tố cơ bản và quan trọng trong tiếng Nhật. Trợ từ không chỉ giúp bổ sung ý nghĩa cho từ mà nó đi kèm, mà còn thiết lập mối quan hệ giữa các...</p>
         </a>
       </article>
     
-      <article>
-        <a href="https://duongdao.family/cach-nho-cach-bien-doi-cac-the-dong-tu-tieng-nhat-n5/" class="group grid gap-3 py-6 no-underline md:grid-cols-[140px_minmax(0,1fr)]">
-          <time class="text-sm text-muted" datetime="2024-08-22">22/08/2024</time>
-          <div>
-            <h2 class="text-xl font700 leading-8 text-ink group-hover:text-leaf">Cách dễ nhớ nhất để nắm các quy tắc biến đổi các thể động từ tiếng Nhật (Cơ bản ~ N5)</h2>
-            <p class="mt-2 text-sm leading-7 text-muted">Khi bắt đầu học tiếng Nhật, mình đã sử dụng giáo trình 新标准日本语 (Tân Nhật Ngữ Tiêu Chuẩn). Đây là một bộ giáo trình phổ biến tại Trung Hoa Đại Lục, dễ dàng tìm thấy video hướng dẫn đầy đủ trên mạng, rất thuận lợi cho việc...</p>
+      <article class="group rounded-[20px] border border-line bg-card shadow-sm transition hover:-translate-y-0.5 hover:border-leaf/40 hover:shadow-leafy">
+        <a href="https://duongdao.family/cach-nho-cach-bien-doi-cac-the-dong-tu-tieng-nhat-n5/" class="grid gap-2 p-6 no-underline">
+          <p class="flex flex-wrap items-center gap-x-2 text-xs text-muted">
+            <time datetime="2024-08-22">22/08/2024</time>
+            <span aria-hidden="true">·</span>
+            <span>6 phút đọc</span>
             
-              <p class="mt-3 text-xs font-semibold uppercase text-muted">Ông Già Coder EB</p>
+              <span aria-hidden="true">·</span>
+              <span>Ông Già Coder EB</span>
             
-          </div>
+          </p>
+          <h2 class="font-display text-xl font-semibold leading-8 text-ink transition group-hover:text-leaf">Cách dễ nhớ nhất để nắm các quy tắc biến đổi các thể động từ tiếng Nhật (Cơ bản ~ N5)</h2>
+          <p class="text-sm leading-7 text-muted">Khi bắt đầu học tiếng Nhật, mình đã sử dụng giáo trình 新标准日本语 (Tân Nhật Ngữ Tiêu Chuẩn). Đây là một bộ giáo trình phổ biến tại Trung Hoa Đại Lục, dễ dàng tìm thấy video hướng dẫn đầy đủ trên mạng, rất thuận lợi cho việc...</p>
         </a>
       </article>
     
-      <article>
-        <a href="https://duongdao.family/dau-nanh-len-men-Nhat-nattou/" class="group grid gap-3 py-6 no-underline md:grid-cols-[140px_minmax(0,1fr)]">
-          <time class="text-sm text-muted" datetime="2024-08-19">19/08/2024</time>
-          <div>
-            <h2 class="text-xl font700 leading-8 text-ink group-hover:text-leaf">納豆「なっとう」</h2>
-            <p class="mt-2 text-sm leading-7 text-muted">納豆「なっとう」は大豆「だいず」を納豆菌「きん」によって発酵「はっこう」させた日本の食品「しょくひん」です。納豆も起源「きげん」は中国で、豆腐「とうふ」と同じように大豆から作れます。しかし、中国から輸入「ゆにゅう」された納豆は、現代「げんだい」の糸「いと」を引「ひ」く納豆は同じではありません。 納豆はかき回「まわ」し、糸「いと」をたくさん引いたほうが美味しい、酵素「こうそ」が増「ふ」えて体にいいです。発酵して作るので臭「くさ」みがあり、...</p>
+      <article class="group rounded-[20px] border border-line bg-card shadow-sm transition hover:-translate-y-0.5 hover:border-leaf/40 hover:shadow-leafy">
+        <a href="https://duongdao.family/dau-nanh-len-men-Nhat-nattou/" class="grid gap-2 p-6 no-underline">
+          <p class="flex flex-wrap items-center gap-x-2 text-xs text-muted">
+            <time datetime="2024-08-19">19/08/2024</time>
+            <span aria-hidden="true">·</span>
+            <span>2 phút đọc</span>
             
-              <p class="mt-3 text-xs font-semibold uppercase text-muted">Ông Già Coder EB</p>
+              <span aria-hidden="true">·</span>
+              <span>Ông Già Coder EB</span>
             
-          </div>
+          </p>
+          <h2 class="font-display text-xl font-semibold leading-8 text-ink transition group-hover:text-leaf">納豆「なっとう」</h2>
+          <p class="text-sm leading-7 text-muted">納豆「なっとう」は大豆「だいず」を納豆菌「きん」によって発酵「はっこう」させた日本の食品「しょくひん」です。納豆も起源「きげん」は中国で、豆腐「とうふ」と同じように大豆から作れます。しかし、中国から輸入「ゆにゅう」された納豆は、現代「げんだい」の糸「いと」を引「ひ」く納豆は同じではありません。 納豆はかき回「まわ」し、糸「いと」をたくさん引いたほうが美味しい、酵素「こうそ」が増「ふ」えて体にいいです。発酵して作るので臭「くさ」みがあり、...</p>
         </a>
       </article>
     
-      <article>
-        <a href="https://duongdao.family/ngu-phap-tieng-nhat-so-cap-2/" class="group grid gap-3 py-6 no-underline md:grid-cols-[140px_minmax(0,1fr)]">
-          <time class="text-sm text-muted" datetime="2024-08-18">18/08/2024</time>
-          <div>
-            <h2 class="text-xl font700 leading-8 text-ink group-hover:text-leaf">新标日初上笔记（语法）- Phần 2</h2>
-            <p class="mt-2 text-sm leading-7 text-muted">Phần 1: https://duongdao.family/ngu-phap-tieng-nhat-so-cap-1/ 11.1.1. 名（１）は 名（２）が + 好き・嫌い・怖い・・・です 好きです・嫌いです・怖いです - Các tính từ biểu đạt tình cảm có thể dùng mẫu câu: 名（１）は 名（２）が + 好き・嫌い・怖い・・・です。 để diễn đạt. 名（１）là chủ t...</p>
+      <article class="group rounded-[20px] border border-line bg-card shadow-sm transition hover:-translate-y-0.5 hover:border-leaf/40 hover:shadow-leafy">
+        <a href="https://duongdao.family/ngu-phap-tieng-nhat-so-cap-2/" class="grid gap-2 p-6 no-underline">
+          <p class="flex flex-wrap items-center gap-x-2 text-xs text-muted">
+            <time datetime="2024-08-18">18/08/2024</time>
+            <span aria-hidden="true">·</span>
+            <span>11 phút đọc</span>
             
-              <p class="mt-3 text-xs font-semibold uppercase text-muted">Ông Già Coder EB</p>
+              <span aria-hidden="true">·</span>
+              <span>Ông Già Coder EB</span>
             
-          </div>
+          </p>
+          <h2 class="font-display text-xl font-semibold leading-8 text-ink transition group-hover:text-leaf">新标日初上笔记（语法）- Phần 2</h2>
+          <p class="text-sm leading-7 text-muted">Phần 1: https://duongdao.family/ngu-phap-tieng-nhat-so-cap-1/ 11.1.1. 名（１）は 名（２）が + 好き・嫌い・怖い・・・です 好きです・嫌いです・怖いです - Các tính từ biểu đạt tình cảm có thể dùng mẫu câu: 名（１）は 名（２）が + 好き・嫌い・怖い・・・です。 để diễn đạt. 名（１）là chủ t...</p>
         </a>
       </article>
     
@@ -235,10 +314,49 @@
 
     </main>
 
-    <footer class="border-t border-line bg-mist">
-      <div class="mx-auto grid max-w-6xl gap-10 px-5 py-10 md:grid-cols-[1.2fr_1fr] md:px-8">
+    <footer class="relative overflow-hidden border-t border-line bg-moss/70">
+      <svg viewBox="0 0 200 140" fill="none" xmlns="http://www.w3.org/2000/svg" class="pointer-events-none absolute -right-6 -top-8 h-36 w-52 opacity-50 md:h-44 md:w-64" aria-hidden="true" focusable="false">
+  <path d="M10 130 C 54 108, 104 72, 182 16" stroke="#7c9b72" stroke-width="2.4" stroke-linecap="round" />
+  <g transform="translate(34 119) rotate(8)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#a9c398" opacity="0.9" /></g>
+  <g transform="translate(52 109) rotate(-84)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#bcd3a8" opacity="0.9" /></g>
+  <g transform="translate(76 94) rotate(4)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#8fb083" opacity="0.9" /></g>
+  <g transform="translate(96 81) rotate(-88)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#a9c398" opacity="0.9" /></g>
+  <g transform="translate(120 64) rotate(0)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#bcd3a8" opacity="0.9" /></g>
+  <g transform="translate(138 52) rotate(-92)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#8fb083" opacity="0.9" /></g>
+  <g transform="translate(158 37) rotate(-6)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#a9c398" opacity="0.9" /></g>
+  <g transform="translate(172 26) rotate(-96)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#cfe0bd" opacity="0.9" /></g>
+  <g transform="translate(182 16) rotate(-42)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#7fa574" opacity="0.95" /></g>
+  <circle cx="64" cy="100" r="3" fill="#6f9270" opacity="0.55" />
+  <circle cx="112" cy="71" r="2.5" fill="#6f9270" opacity="0.5" />
+  <circle cx="150" cy="43" r="2.8" fill="#6f9270" opacity="0.55" />
+</svg>
+
+      <svg viewBox="0 0 200 140" fill="none" xmlns="http://www.w3.org/2000/svg" class="pointer-events-none absolute -left-8 -top-6 hidden h-32 w-48 -scale-x-100 opacity-40 sm:block" aria-hidden="true" focusable="false">
+  <path d="M10 130 C 54 108, 104 72, 182 16" stroke="#7c9b72" stroke-width="2.4" stroke-linecap="round" />
+  <g transform="translate(34 119) rotate(8)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#a9c398" opacity="0.9" /></g>
+  <g transform="translate(52 109) rotate(-84)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#bcd3a8" opacity="0.9" /></g>
+  <g transform="translate(76 94) rotate(4)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#8fb083" opacity="0.9" /></g>
+  <g transform="translate(96 81) rotate(-88)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#a9c398" opacity="0.9" /></g>
+  <g transform="translate(120 64) rotate(0)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#bcd3a8" opacity="0.9" /></g>
+  <g transform="translate(138 52) rotate(-92)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#8fb083" opacity="0.9" /></g>
+  <g transform="translate(158 37) rotate(-6)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#a9c398" opacity="0.9" /></g>
+  <g transform="translate(172 26) rotate(-96)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#cfe0bd" opacity="0.9" /></g>
+  <g transform="translate(182 16) rotate(-42)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#7fa574" opacity="0.95" /></g>
+  <circle cx="64" cy="100" r="3" fill="#6f9270" opacity="0.55" />
+  <circle cx="112" cy="71" r="2.5" fill="#6f9270" opacity="0.5" />
+  <circle cx="150" cy="43" r="2.8" fill="#6f9270" opacity="0.55" />
+</svg>
+
+      <div class="relative mx-auto grid max-w-6xl gap-10 px-5 py-12 md:grid-cols-[1.2fr_1fr] md:px-8">
         <div>
-          <p class="text-sm font-semibold uppercase text-muted">Dương & Đào Family</p>
+          <p class="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wide text-leaf">
+            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" aria-hidden="true" focusable="false">
+  <path d="M3.5 16.5 C 3.5 9, 9 3.5, 16.5 3.5 C 16.5 11, 11 16.5, 3.5 16.5 Z" fill="currentColor" opacity="0.22" />
+  <path d="M3.5 16.5 C 3.5 9, 9 3.5, 16.5 3.5 M6.2 13.8 C 8.8 13.2 11.9 10.1 12.9 7.1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" />
+</svg>
+
+            Dương &amp; Đào Family
+          </p>
           <p class="mt-3 max-w-xl text-sm leading-7 text-muted">
             Những điều đang học, những nơi đã đi qua, và vài kỷ niệm muốn giữ lại cho nhau.
           </p>
@@ -247,35 +365,35 @@
           </p>
           <div class="mt-5 flex flex-wrap gap-2">
             
-              <a href="/categories/Cuoc-song-o-Nhat/" class="rounded-lg border border-line bg-white px-3 py-2 text-xs font-semibold text-muted no-underline transition hover:border-ink hover:text-ink">
+              <a href="/categories/Cuoc-song-o-Nhat/" class="rounded-full border border-line bg-card px-4 py-2 text-xs font-semibold text-muted no-underline transition hover:border-leaf hover:text-leaf">
                 Cuộc sống ở Nhật
               </a>
             
-              <a href="/categories/Cam/" class="rounded-lg border border-line bg-white px-3 py-2 text-xs font-semibold text-muted no-underline transition hover:border-ink hover:text-ink">
+              <a href="/categories/Cam/" class="rounded-full border border-line bg-card px-4 py-2 text-xs font-semibold text-muted no-underline transition hover:border-leaf hover:text-leaf">
                 Cảm
               </a>
             
-              <a href="/categories/Ghi/" class="rounded-lg border border-line bg-white px-3 py-2 text-xs font-semibold text-muted no-underline transition hover:border-ink hover:text-ink">
+              <a href="/categories/Ghi/" class="rounded-full border border-line bg-card px-4 py-2 text-xs font-semibold text-muted no-underline transition hover:border-leaf hover:text-leaf">
                 Ghi
               </a>
             
-              <a href="/categories/Hoc/" class="rounded-lg border border-line bg-white px-3 py-2 text-xs font-semibold text-muted no-underline transition hover:border-ink hover:text-ink">
+              <a href="/categories/Hoc/" class="rounded-full border border-line bg-card px-4 py-2 text-xs font-semibold text-muted no-underline transition hover:border-leaf hover:text-leaf">
                 Học
               </a>
             
-              <a href="/categories/Kiwi-cinema/" class="rounded-lg border border-line bg-white px-3 py-2 text-xs font-semibold text-muted no-underline transition hover:border-ink hover:text-ink">
+              <a href="/categories/Kiwi-cinema/" class="rounded-full border border-line bg-card px-4 py-2 text-xs font-semibold text-muted no-underline transition hover:border-leaf hover:text-leaf">
                 Kiwi cinema
               </a>
             
-              <a href="/categories/Kiwi-s-Corner/" class="rounded-lg border border-line bg-white px-3 py-2 text-xs font-semibold text-muted no-underline transition hover:border-ink hover:text-ink">
+              <a href="/categories/Kiwi-s-Corner/" class="rounded-full border border-line bg-card px-4 py-2 text-xs font-semibold text-muted no-underline transition hover:border-leaf hover:text-leaf">
                 Kiwi&#39;s Corner
               </a>
             
-              <a href="/categories/Lam/" class="rounded-lg border border-line bg-white px-3 py-2 text-xs font-semibold text-muted no-underline transition hover:border-ink hover:text-ink">
+              <a href="/categories/Lam/" class="rounded-full border border-line bg-card px-4 py-2 text-xs font-semibold text-muted no-underline transition hover:border-leaf hover:text-leaf">
                 Làm
               </a>
             
-              <a href="/categories/Lam-cha-me/" class="rounded-lg border border-line bg-white px-3 py-2 text-xs font-semibold text-muted no-underline transition hover:border-ink hover:text-ink">
+              <a href="/categories/Lam-cha-me/" class="rounded-full border border-line bg-card px-4 py-2 text-xs font-semibold text-muted no-underline transition hover:border-leaf hover:text-leaf">
                 Làm cha mẹ
               </a>
             
@@ -283,35 +401,141 @@
         </div>
 
         <div>
-          <p class="text-sm font-semibold uppercase text-muted">Mới nhất</p>
+          <p class="font-display text-sm font-semibold uppercase tracking-wide text-muted">Mới nhất</p>
           <div class="mt-4 divide-y divide-line">
             
-              <a href="https://duongdao.family/khi-nang-luc-cua-con-khong-nam-tren-san-khau/" class="block py-3 no-underline">
-                <span class="block text-sm font-semibold leading-6 text-ink">Khi năng lực của con không nằm trên sân khấu</span>
+              <a href="https://duongdao.family/khi-nang-luc-cua-con-khong-nam-tren-san-khau/" class="group block py-3 no-underline">
+                <span class="block text-sm font-semibold leading-6 text-ink transition group-hover:text-leaf">Khi năng lực của con không nằm trên sân khấu</span>
                 <span class="text-xs text-muted">25/06/2026</span>
               </a>
             
-              <a href="https://duongdao.family/gia-tri-cua-mot-nang-luc-khong-sinh-loi/" class="block py-3 no-underline">
-                <span class="block text-sm font-semibold leading-6 text-ink">Giá trị của một “năng lực không sinh lời”</span>
+              <a href="https://duongdao.family/gia-tri-cua-mot-nang-luc-khong-sinh-loi/" class="group block py-3 no-underline">
+                <span class="block text-sm font-semibold leading-6 text-ink transition group-hover:text-leaf">Giá trị của một “năng lực không sinh lời”</span>
                 <span class="text-xs text-muted">22/05/2026</span>
               </a>
             
-              <a href="https://duongdao.family/ban-co-tai-nang-khong/" class="block py-3 no-underline">
-                <span class="block text-sm font-semibold leading-6 text-ink">Bạn có tài năng không? Có lẽ đó không phải câu hỏi quan trọng nhất</span>
+              <a href="https://duongdao.family/ban-co-tai-nang-khong/" class="group block py-3 no-underline">
+                <span class="block text-sm font-semibold leading-6 text-ink transition group-hover:text-leaf">Bạn có tài năng không? Có lẽ đó không phải câu hỏi quan trọng nhất</span>
                 <span class="text-xs text-muted">19/05/2026</span>
               </a>
             
-              <a href="https://duongdao.family/hoc-gi-quan-trong-nhat-thoi-dai-ai/" class="block py-3 no-underline">
-                <span class="block text-sm font-semibold leading-6 text-ink">Học gì quan trọng nhất thời đại AI?</span>
+              <a href="https://duongdao.family/hoc-gi-quan-trong-nhat-thoi-dai-ai/" class="group block py-3 no-underline">
+                <span class="block text-sm font-semibold leading-6 text-ink transition group-hover:text-leaf">Học gì quan trọng nhất thời đại AI?</span>
                 <span class="text-xs text-muted">05/05/2026</span>
               </a>
             
           </div>
         </div>
         <p class="md:col-span-2 text-xs leading-6 text-muted">
-          Kiwi icon by
-          <a class="font-semibold text-muted underline underline-offset-2" href="https://www.flaticon.com/free-icon/kiwi_6498542" target="_blank" rel="noopener">Marz Gallery - Flaticon</a>.
+          UI Designed by Fable 5
         </p>
+      </div>
+
+      <div class="pointer-events-none relative mx-auto -mt-6 flex max-w-6xl items-end justify-between px-5 md:px-8" aria-hidden="true">
+        <svg viewBox="0 0 160 180" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-16 w-14 opacity-75" aria-hidden="true" focusable="false">
+  <ellipse cx="80" cy="176" rx="34" ry="4" fill="#6f9270" opacity="0.18" />
+  <path d="M80 178 C 82 150, 78 124, 74 100" stroke="#8d795f" stroke-width="7" stroke-linecap="round" />
+  <path d="M75 104 C 66 92, 58 84, 46 76" stroke="#8d795f" stroke-width="4" stroke-linecap="round" />
+  <path d="M76 112 C 90 102, 100 94, 110 84" stroke="#8d795f" stroke-width="4" stroke-linecap="round" />
+  <path d="M74 100 C 80 88, 88 78, 96 70" stroke="#8d795f" stroke-width="3.5" stroke-linecap="round" />
+  <circle cx="50" cy="64" r="28" fill="#9dbb8f" opacity="0.85" />
+  <circle cx="84" cy="42" r="32" fill="#8fb083" opacity="0.85" />
+  <circle cx="116" cy="64" r="26" fill="#bcd3a8" opacity="0.9" />
+  <circle cx="68" cy="52" r="24" fill="#a9c398" opacity="0.8" />
+  <circle cx="98" cy="68" r="24" fill="#cfe0bd" opacity="0.75" />
+  <circle cx="60" cy="58" r="2.5" fill="#5e7d5a" opacity="0.6" />
+  <circle cx="92" cy="50" r="2.5" fill="#5e7d5a" opacity="0.6" />
+  <circle cx="112" cy="70" r="2.5" fill="#5e7d5a" opacity="0.6" />
+  <g transform="translate(128 108) rotate(35) scale(0.45)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#a9c398" opacity="0.7" /></g>
+  <g transform="translate(36 122) rotate(-24) scale(0.4)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#9dbb8f" opacity="0.7" /></g>
+</svg>
+
+        <svg viewBox="0 0 200 140" fill="none" xmlns="http://www.w3.org/2000/svg" class="hidden h-10 w-16 opacity-60 sm:block" aria-hidden="true" focusable="false">
+  <path d="M10 130 C 54 108, 104 72, 182 16" stroke="#7c9b72" stroke-width="2.4" stroke-linecap="round" />
+  <g transform="translate(34 119) rotate(8)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#a9c398" opacity="0.9" /></g>
+  <g transform="translate(52 109) rotate(-84)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#bcd3a8" opacity="0.9" /></g>
+  <g transform="translate(76 94) rotate(4)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#8fb083" opacity="0.9" /></g>
+  <g transform="translate(96 81) rotate(-88)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#a9c398" opacity="0.9" /></g>
+  <g transform="translate(120 64) rotate(0)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#bcd3a8" opacity="0.9" /></g>
+  <g transform="translate(138 52) rotate(-92)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#8fb083" opacity="0.9" /></g>
+  <g transform="translate(158 37) rotate(-6)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#a9c398" opacity="0.9" /></g>
+  <g transform="translate(172 26) rotate(-96)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#cfe0bd" opacity="0.9" /></g>
+  <g transform="translate(182 16) rotate(-42)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#7fa574" opacity="0.95" /></g>
+  <circle cx="64" cy="100" r="3" fill="#6f9270" opacity="0.55" />
+  <circle cx="112" cy="71" r="2.5" fill="#6f9270" opacity="0.5" />
+  <circle cx="150" cy="43" r="2.8" fill="#6f9270" opacity="0.55" />
+</svg>
+
+        <svg viewBox="0 0 160 180" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-24 w-20 opacity-90" aria-hidden="true" focusable="false">
+  <ellipse cx="80" cy="176" rx="34" ry="4" fill="#6f9270" opacity="0.18" />
+  <path d="M80 178 C 82 150, 78 124, 74 100" stroke="#8d795f" stroke-width="7" stroke-linecap="round" />
+  <path d="M75 104 C 66 92, 58 84, 46 76" stroke="#8d795f" stroke-width="4" stroke-linecap="round" />
+  <path d="M76 112 C 90 102, 100 94, 110 84" stroke="#8d795f" stroke-width="4" stroke-linecap="round" />
+  <path d="M74 100 C 80 88, 88 78, 96 70" stroke="#8d795f" stroke-width="3.5" stroke-linecap="round" />
+  <circle cx="50" cy="64" r="28" fill="#9dbb8f" opacity="0.85" />
+  <circle cx="84" cy="42" r="32" fill="#8fb083" opacity="0.85" />
+  <circle cx="116" cy="64" r="26" fill="#bcd3a8" opacity="0.9" />
+  <circle cx="68" cy="52" r="24" fill="#a9c398" opacity="0.8" />
+  <circle cx="98" cy="68" r="24" fill="#cfe0bd" opacity="0.75" />
+  <circle cx="60" cy="58" r="2.5" fill="#5e7d5a" opacity="0.6" />
+  <circle cx="92" cy="50" r="2.5" fill="#5e7d5a" opacity="0.6" />
+  <circle cx="112" cy="70" r="2.5" fill="#5e7d5a" opacity="0.6" />
+  <g transform="translate(128 108) rotate(35) scale(0.45)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#a9c398" opacity="0.7" /></g>
+  <g transform="translate(36 122) rotate(-24) scale(0.4)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#9dbb8f" opacity="0.7" /></g>
+</svg>
+
+        <svg viewBox="0 0 200 140" fill="none" xmlns="http://www.w3.org/2000/svg" class="hidden h-12 w-20 -scale-x-100 opacity-60 md:block" aria-hidden="true" focusable="false">
+  <path d="M10 130 C 54 108, 104 72, 182 16" stroke="#7c9b72" stroke-width="2.4" stroke-linecap="round" />
+  <g transform="translate(34 119) rotate(8)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#a9c398" opacity="0.9" /></g>
+  <g transform="translate(52 109) rotate(-84)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#bcd3a8" opacity="0.9" /></g>
+  <g transform="translate(76 94) rotate(4)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#8fb083" opacity="0.9" /></g>
+  <g transform="translate(96 81) rotate(-88)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#a9c398" opacity="0.9" /></g>
+  <g transform="translate(120 64) rotate(0)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#bcd3a8" opacity="0.9" /></g>
+  <g transform="translate(138 52) rotate(-92)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#8fb083" opacity="0.9" /></g>
+  <g transform="translate(158 37) rotate(-6)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#a9c398" opacity="0.9" /></g>
+  <g transform="translate(172 26) rotate(-96)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#cfe0bd" opacity="0.9" /></g>
+  <g transform="translate(182 16) rotate(-42)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#7fa574" opacity="0.95" /></g>
+  <circle cx="64" cy="100" r="3" fill="#6f9270" opacity="0.55" />
+  <circle cx="112" cy="71" r="2.5" fill="#6f9270" opacity="0.5" />
+  <circle cx="150" cy="43" r="2.8" fill="#6f9270" opacity="0.55" />
+</svg>
+
+        <svg viewBox="0 0 160 180" fill="none" xmlns="http://www.w3.org/2000/svg" class="hidden h-14 w-12 opacity-75 sm:block" aria-hidden="true" focusable="false">
+  <ellipse cx="80" cy="176" rx="34" ry="4" fill="#6f9270" opacity="0.18" />
+  <path d="M80 178 C 82 150, 78 124, 74 100" stroke="#8d795f" stroke-width="7" stroke-linecap="round" />
+  <path d="M75 104 C 66 92, 58 84, 46 76" stroke="#8d795f" stroke-width="4" stroke-linecap="round" />
+  <path d="M76 112 C 90 102, 100 94, 110 84" stroke="#8d795f" stroke-width="4" stroke-linecap="round" />
+  <path d="M74 100 C 80 88, 88 78, 96 70" stroke="#8d795f" stroke-width="3.5" stroke-linecap="round" />
+  <circle cx="50" cy="64" r="28" fill="#9dbb8f" opacity="0.85" />
+  <circle cx="84" cy="42" r="32" fill="#8fb083" opacity="0.85" />
+  <circle cx="116" cy="64" r="26" fill="#bcd3a8" opacity="0.9" />
+  <circle cx="68" cy="52" r="24" fill="#a9c398" opacity="0.8" />
+  <circle cx="98" cy="68" r="24" fill="#cfe0bd" opacity="0.75" />
+  <circle cx="60" cy="58" r="2.5" fill="#5e7d5a" opacity="0.6" />
+  <circle cx="92" cy="50" r="2.5" fill="#5e7d5a" opacity="0.6" />
+  <circle cx="112" cy="70" r="2.5" fill="#5e7d5a" opacity="0.6" />
+  <g transform="translate(128 108) rotate(35) scale(0.45)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#a9c398" opacity="0.7" /></g>
+  <g transform="translate(36 122) rotate(-24) scale(0.4)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#9dbb8f" opacity="0.7" /></g>
+</svg>
+
+        <svg viewBox="0 0 160 180" fill="none" xmlns="http://www.w3.org/2000/svg" class="hidden h-20 w-16 opacity-85 lg:block" aria-hidden="true" focusable="false">
+  <ellipse cx="80" cy="176" rx="34" ry="4" fill="#6f9270" opacity="0.18" />
+  <path d="M80 178 C 82 150, 78 124, 74 100" stroke="#8d795f" stroke-width="7" stroke-linecap="round" />
+  <path d="M75 104 C 66 92, 58 84, 46 76" stroke="#8d795f" stroke-width="4" stroke-linecap="round" />
+  <path d="M76 112 C 90 102, 100 94, 110 84" stroke="#8d795f" stroke-width="4" stroke-linecap="round" />
+  <path d="M74 100 C 80 88, 88 78, 96 70" stroke="#8d795f" stroke-width="3.5" stroke-linecap="round" />
+  <circle cx="50" cy="64" r="28" fill="#9dbb8f" opacity="0.85" />
+  <circle cx="84" cy="42" r="32" fill="#8fb083" opacity="0.85" />
+  <circle cx="116" cy="64" r="26" fill="#bcd3a8" opacity="0.9" />
+  <circle cx="68" cy="52" r="24" fill="#a9c398" opacity="0.8" />
+  <circle cx="98" cy="68" r="24" fill="#cfe0bd" opacity="0.75" />
+  <circle cx="60" cy="58" r="2.5" fill="#5e7d5a" opacity="0.6" />
+  <circle cx="92" cy="50" r="2.5" fill="#5e7d5a" opacity="0.6" />
+  <circle cx="112" cy="70" r="2.5" fill="#5e7d5a" opacity="0.6" />
+  <g transform="translate(128 108) rotate(35) scale(0.45)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#a9c398" opacity="0.7" /></g>
+  <g transform="translate(36 122) rotate(-24) scale(0.4)"><path d="M0 0 C 9 -11, 24 -13, 34 -4 C 25 8, 10 9, 0 0 Z" fill="#9dbb8f" opacity="0.7" /></g>
+</svg>
+
       </div>
     </footer>
 
